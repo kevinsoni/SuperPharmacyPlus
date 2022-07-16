@@ -1,0 +1,795 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,300;1,400;1,500;1,900&family=Roboto:wght@300&family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,300;1,400;1,500;1,900&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.universal {
+    padding: 0 280px;
+
+}
+
+/* HEADER - SECTION 1 */
+.container {
+    height: 6.25em;
+    width: 100%;
+    background-color: rgb(251, 242, 82);
+    display: flex;
+}
+
+.column1-header {
+    padding-right: 3.625em;
+}
+
+.column1-header img {
+    padding: 1.5625em 0;
+    padding-left: 0;
+    width: 100%;
+}
+
+.column2-header {
+    padding: 0 1.25em 0 1.5625em;
+}
+
+.search-container {
+    padding: 1.875em 0;
+}
+
+.search-container button {
+    padding: 0.3125em;
+    margin: -28px;
+    border-radius: 3px;
+    background: rgb(9, 115, 186);
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container input[type=text] {
+    padding: 0 0.9375em;
+    font-size: 17px;
+    border: none;
+    border-radius: 0.3125em;
+    background-color: rgb(255, 255, 255);
+    width: 426px;
+    height: 42px;
+}
+
+.search-container input:hover {
+    box-shadow: 4.684px 5.202px 0.9375em 0px rgb(0, 0, 0);
+}
+
+.column3-header {
+    display: flex;
+    align-items: center;
+    border-right-style: solid;
+    border-color: #fff;
+    border-width: 2px;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+}
+
+.column3-header img {
+    width: 1.5em;
+    height: 1.5em;
+    padding-left: 42px;
+    padding-right: 0.3125em;
+}
+
+.column3-header p {
+    font-size: 13px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-right: 1.875em;
+}
+
+.column3-header p span {
+    color: rgb(9, 115, 186);
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.column4-header {
+    display: flex;
+    align-items: center;
+    border-right-style: solid;
+    border-color: #fff;
+    border-width: 2px;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+}
+
+.column4-header img {
+    width: 1.25em;
+    height: 1.25em;
+    padding-left: 1.875em;
+    padding-right: 0.3125em;
+}
+
+.column4-header p {
+    font-size: 0.9375em;
+    font-family: 'Roboto', sans-serif;
+    padding-right: 1.875em;
+}
+
+.column5-header {
+    display: flex;
+    align-items: center;
+}
+
+#carticon {
+    width: 26px;
+    height: 38px;
+    padding-left: 1.875em;
+    padding-right: 0.3125em;
+}
+
+#auslogo {
+    width: 18px;
+    height: 12px;
+}
+
+.column5-header p {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 13px;
+    margin-left: 0.3125em;
+}
+
+/* USP - SECTION 2 */
+.usp {
+    height: 48px;
+    display: flex;
+}
+
+/*  */
+.column1-usp {
+    display: flex;
+    align-items: center;
+}
+
+.column1-usp img {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    margin-right: 9px;
+}
+
+.column1-usp p {
+    font-size: 20px;
+    padding-right: 112px;
+}
+
+.column1-usp p span {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*  */
+.column2-usp {
+    display: flex;
+    align-items: center;
+}
+
+.column2-usp img {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    margin-right: 9px;
+}
+
+.column2-usp p {
+    font-size: 20px;
+    padding-right: 112px;
+}
+
+.column2-usp p span {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*  */
+.column3-usp {
+    display: flex;
+    align-items: center;
+}
+
+.column3-usp img {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    margin-right: 9px;
+}
+
+.column3-usp p {
+    font-size: 20px;
+    padding-right: 112px;
+}
+
+.column3-usp p span {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*  */
+.column4-usp {
+    display: flex;
+    align-items: center;
+}
+
+.column4-usp img {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    margin-right: 9px;
+}
+
+.column4-usp p {
+    font-size: 20px;
+}
+
+.column4-usp p span {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NAVBAR-COPY - SECTION 3 */
+.navbar-copy {
+    height: 48px;
+    background-color: rgb(14, 102, 161);
+}
+
+.navbar-copy ul {
+    padding: 14px 0;
+}
+
+.navbar-copy ul li {
+    list-style-type: none;
+    display: contents;
+}
+
+.navbar-copy ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding-right: 38px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* BANNER - SECTION 4 */
+.banner {
+    padding-top: 1px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+/*  */
+.banner-heading {
+    position: absolute;
+    top: 304px;
+    font-size: 65px;
+    font-weight: 800;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*  */
+.banner-subheading {
+    position: absolute;
+    top: 478px;
+    font-size: 24px;
+    font-weight: 200;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.3em;
+}
+
+/*  */
+.banner-button button {
+    position: absolute;
+    top: 576px;
+    font-size: 21px;
+    padding: 10px 18px;
+    background-color: rgb(237, 35, 40);
+    color: #fff;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    align-items: center;
+    box-shadow: 2px 3px 12px #000;
+    cursor: pointer;
+}
+
+.icon-arrow-right-circle {
+    font-size: 22px;
+}
+
+/* MULTIPLE_BANNER - SECTION 5 */
+.multiple_banners {
+    display: flex;
+}
+
+/* 1 */
+.banner1 {
+    padding: 20px 20px 20px 0;
+}
+
+.row1 .banner1 p {
+    font-size: 22px;
+    position: absolute;
+    top: 835px;
+    left: 21%;
+    font-weight: 800;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.row1 .banner1 p span {
+    font-size: 14px;
+    position: absolute;
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 5px;
+}
+
+.row1 .banner1-button {
+    color: rgb(24, 124, 191);
+    border: none;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    position: absolute;
+    top: 900px;
+    left: 25.5%;
+    align-items: center;
+}
+
+.row1 .icon-arrow-right-circle {
+    font-size: 11px;
+    color: rgb(237, 35, 40);
+    font-weight: 900;
+}
+
+/* 2 */
+.banner2 {
+    padding: 0 20px 20px 0;
+}
+
+.row1 .banner2 p {
+    font-size: 22px;
+    position: absolute;
+    top: 1033px;
+    left: 27%;
+    font-weight: 800;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.row1 .banner2 p span {
+    font-size: 14px;
+    font-weight: 300;
+    right: 65%;
+    bottom: 4px;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.row1 .banner2-button {
+    color: rgb(24, 124, 191);
+    border: none;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    position: absolute;
+    top: 1103px;
+    left: 25.5%;
+    align-items: center;
+}
+
+.row1 .icon-arrow-right-circle {
+    font-size: 11px;
+    color: rgb(237, 35, 40);
+    font-weight: 900;
+}
+
+/* 3 */
+.banner3 {
+    padding: 20px 20px 20px 0;
+}
+
+.row2 .banner3 p {
+    font-size: 22px;
+    position: absolute;
+    top: 818px;
+    left: 38.5%;
+    font-weight: 800;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.row2 .banner3 p span {
+    font-size: 14px;
+    font-weight: 300;
+    left: 25%;
+    bottom: 4px;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.row2 .banner3-button {
+    color: rgb(24, 124, 191);
+    border: none;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    position: absolute;
+    top: 882px;
+    left: 44.5%;
+    align-items: center;
+}
+
+.row2 .icon-arrow-right-circle {
+    font-size: 11px;
+    color: rgb(237, 35, 40);
+    font-weight: 900;
+}
+
+/* 4 */
+.banner4 {
+    padding: 20px 20px 20px 0;
+}
+
+.row3 .banner4 p {
+    font-size: 22px;
+    position: absolute;
+    top: 827px;
+    left: 51.5%;
+    font-weight: 800;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.row3 .banner4 p span {
+    font-size: 14px;
+    font-weight: 300;
+    top: -3px;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.row3 .banner4-button {
+    color: rgb(24, 124, 191);
+    border: none;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    position: absolute;
+    top: 921px;
+    left: 51.5%;
+    align-items: center;
+}
+
+.row3 .icon-arrow-right-circle {
+    font-size: 11px;
+    color: rgb(237, 35, 40);
+    font-weight: 900;
+}
+
+/* 5 */
+.banner5 {
+    padding: 0 20px 20px 0;
+}
+
+.row3 .banner5 p {
+    font-size: 22px;
+    position: absolute;
+    top: 1036px;
+    left: 51.5%;
+    font-weight: 800;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.row3 .banner5 p span {
+    font-size: 14px;
+    font-weight: 300;
+    bottom: 3px;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.row3 .banner5-button {
+    color: rgb(24, 124, 191);
+    border: none;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    position: absolute;
+    top: 885px;
+    right: 14%;
+    align-items: center;
+}
+
+.row3 .icon-arrow-right-circle {
+    font-size: 11px;
+    color: rgb(237, 35, 40);
+    font-weight: 900;
+}
+
+/* 6 */
+.banner6 {
+    padding: 20px 0 20px 0;
+}
+
+.row4 .banner6 p {
+    font-size: 22px;
+    position: absolute;
+    top: 818px;
+    right: 14%;
+    font-weight: 800;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.row4 .banner6 p span {
+    font-size: 14px;
+    font-weight: 300;
+    bottom: 3px;
+    left: 75%;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.row4 .banner6-button {
+    color: rgb(24, 124, 191);
+    border: none;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    position: absolute;
+    top: 1102px;
+    left: 51.5%;
+    align-items: center;
+}
+
+.row4 .icon-arrow-right-circle {
+    font-size: 11px;
+    color: rgb(237, 35, 40);
+    font-weight: 900;
+}
+
+/* SECTION - 6 */
+.section6 {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.section6 ul li {
+    list-style-type: none;
+    display: contents;
+    font-size: 24px;
+    padding: 1px;
+    color: rgb(201, 201, 201);
+    background-color: #fff;
+}
+
+.section6 ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 10px;
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #fff;
+
+}
+
+.section6 ul li a:hover {
+    color: rgb(24, 124, 191);
+}
+
+.section6 p {
+    font-size: 28px;
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'RageItalic';
+    color: rgb(201, 201, 201);
+}
+
+.section6 .line {
+    border-top: 2px solid red;
+    margin: 0 580px;
+    position: relative;
+    color: rgb(237, 35, 40);
+    top: 15px;
+    z-index: -1;
+}
+
+.productcard {
+    display: flex;
+}
+
+.card {
+    max-width: 300px;
+    text-align: center;
+    font-family: arial;
+    /* box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2); */
+    margin-bottom: 100px;
+    margin-right: 5px;
+    margin: 0 7.5px;
+
+}
+
+.card .card-heading {
+    padding-bottom: 20px;
+    padding-top: 25px;
+    font-weight: 600;
+    font-size: 15px;
+
+}
+
+.price {
+    color: rgb(24, 124, 191);
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+/* 2 */
+.card2 {
+    max-width: 300px;
+    text-align: center;
+    font-family: arial;
+    /* box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2); */
+    margin: 0 7.5px;
+}
+
+.card2 .card-heading {
+    padding-left: 15px;
+    padding-bottom: 20px;
+    padding-top: 25px;
+    font-weight: 600;
+    font-size: 15px;
+
+}
+
+/* 3 */
+.card3 {
+    max-width: 300px;
+    text-align: center;
+    font-family: arial;
+    /* box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2); */
+    margin: 0 7.5px;
+}
+
+.card3 .card-heading {
+    padding-bottom: 20px;
+    padding-top: 25px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* 4 */
+.card4 {
+    max-width: 300px;
+    text-align: center;
+    font-family: arial;
+    /* box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2); */
+    margin: 0 7.5px;
+}
+
+.card4 .card-heading {
+    padding-bottom: 20px;
+    padding-top: 25px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* 4 */
+.card5 {
+    max-width: 300px;
+    text-align: center;
+    font-family: arial;
+    /* box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2); */
+    margin: 0 7.5px;
+}
+
+.card5 .card-heading {
+    padding-bottom: 35px;
+    padding-top: 25px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.price span {
+    color: rgb(201, 201, 201);
+    font-size: 18px;
+    font-weight: 200;
+    padding-left: 5px;
+}
+
+.price-line1 {
+    border-top: 2px solid red;
+    padding: 24px;
+    padding-top: 75px;
+    left: 22%;
+    position: absolute;
+    transform: rotate(320deg);
+}
+
+.price-line2 {
+    border-top: 2px solid red;
+    padding: 24px;
+    padding-top: 75px;
+    right: 29%;
+    position: absolute;
+    transform: rotate(320deg);
+}
+
+.instore-services {
+    background-color: rgb(249, 249, 249);
+    height: 678px;
+    padding: 50px 0;
+}
+
+.instore-services .line {
+    border-top: 2px solid red;
+    margin-right: 500px;
+    margin-left: 830px;
+    position: relative;
+    color: rgb(237, 35, 40);
+    top: 15px;
+}
+
+.instore-services .line2 {
+    border-top: 2px solid red;
+    margin-right: 830px;
+    margin-left: 500px;
+    position: relative;
+    color: rgb(237, 35, 40);
+    bottom: 13px;
+
+}
+
+.instore-services p {
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    padding: 0 10px;
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #fff;
+    background-color: rgb(249, 249, 249);
+
+}
+
+@media screen and (max-width: 1920px) {
+    .universal {
+        padding: 0 235px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .universal {
+        padding: 0 200px;
+    }
+}
