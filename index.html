@@ -5,205 +5,709 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/0d1063cf1c.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css'>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./font/font.css">
-    <title>Document</title>
+    <title>SuperPharmacyPlus</title>
 </head>
 
 <body>
     <!-- HEADER - SECTION 1 -->
     <header>
-        <div class="container universal">
-            <div class="column1-header">
-                <img src="./images/logo.png" alt="logo">
-            </div>
-            <div class="column2-header">
-                <div class="search-container">
-                    <input type="text" placeholder="Search entire store here" name="search">
-                    <button type="submit"><i class="fa fa-search" style="color: #fff;"></i></button>
+        <div class="headertop">
+            <div class="container">
+                <div class="headerContainer">
+                    <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
+                    <div class="header-search">
+                        <form action="/action_page.php" target="_blank" method="get">
+                            <input type="text" placeholder="Search entire store here" name="search">
+                            <button input type="submit"><i class="fa fa-search" style="color: #fff;"></i></button>
+                        </form>
+                    </div>
+                    <div class="header-call">
+                        <img src="./images/call-icon.png" alt="">
+                        <p><span> <a href="tel:0733553052">07 3355 3052 </a></span><br>Call Between 7am-8pm</p>
+                    </div>
+                    <div class="header-account">
+                        <img src="./images/accountlogo.png" alt="accountlogo">
+                        <div class="dropdown">
+                            <button class="dropbtn">My Account <i class="fa-solid fa-angle-down"></i></button>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a href="#">Favourites</a></li>
+                                    <li> <a href="#">Wishlist</a></li>
+                                    <li> <a href="#">Log-Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-cart">
+                        <a href="mycart.html"><img src="./images/cart.png" alt="accountlogo" id="carticon"></a>
+                        <p class="cart_number">&nbsp;0&nbsp;</p>
+                        </a>
+                        <a href="#"><img src="./images/ausicon.png" alt="ausicon" id="auslogo"></a>
+                        <select id="currencyselector">
+                            <option value="aud">AUD</option>
+                            <option value="inr">INR</option>
+                            <option value="inr">INR</option>
+                        </select>
+                        <div class="currency">
+                            $0.00
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="column3-header">
-                <img src="./images/call-icon.png" alt="">
-                <p><span>07 3355 3052</span><br>Call Between 7am-8pm</p>
+        </div>
+
+
+        <!-- USP - SECTION 2 -->
+        <div class="headermiddle">
+            <div class="container">
+                <div class="usp">
+                    <div class="column-usp">
+                        <img src="./images/hire.png" alt="hire">
+                        <div class="uspText"><span>Hire Health</span> Equipment</div>
+                    </div>
+                    <div class="column-usp">
+                        <img src="./images/first-aid-kit.png" alt="first-aid-kit">
+                        <div class="uspText"><span>Shop Instore</span> 7am-8pm Every Day</div>
+                    </div>
+                    <div class="column-usp">
+                        <img src="./images/shop.png" alt="shop">
+                        <div class="uspText"><span>Shop Online</span> 24/7</div>
+                    </div>
+                    <div class="column-usp">
+                        <img src="./images/shipping.png" alt="shop">
+                        <div class="uspText"><span>Free Shippingon</span> orders over $100*</div>
+                    </div>
+                </div>
             </div>
-            <div class="column4-header">
-                <img src="./images/accountlogo.png" alt="accountlogo">
-                <p>My account</p>
-            </div>
-            <div class="column5-header">
-                <img src="./images/cart-icon.png" alt="accountlogo" id="carticon">
-                <img src="./images/ausicon.png" alt="" id="auslogo">
-                <p>AUD<br>$0.00</p>
+        </div>
+
+
+        <!-- NAVBAR-COPY - SECTION 3 -->
+        <div class="headerbottom">
+            <div class="container">
+                <div class="navbar-copy">
+                    <ul>
+                        <li>
+                            <div class="dropdownShopAll">
+                                <button class="dropbtnShopAll">Shop All &nbsp;<i
+                                        class="fa-solid fa-angle-down"></i></button>
+                                <div class="dropdown-contentShopAll">
+                                    <a href="#">Pharmacy</a>
+                                    <a href="#">Vitamins</a>
+                                    <a href="#">Sun Care</a>
+                                    <a href="#">Skin Care</a>
+                                    <a href="#">First Aid</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">Health Equipment</a></li>
+                        <li><a href="#">Baby</a></li>
+                        <li><a href="#">Dental</a></li>
+                        <li><a href="#">Diabetes</a></li>
+                        <li><a href="#">Eye & Ear</a></li>
+                        <li><a href="#">Incontinence</a></li>
+                        <li><a href="#">Skin</a></li>
+                        <li><a href="#">Sport</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- USP - SECTION 2 -->
-    <div class="usp universal">
-        <div class="column1-usp">
-            <img src="./images/hire.png" alt="hire">
-            <p><span>Hire Health</span> Equipment</p>
-        </div>
-        <div class="column2-usp">
-            <img src="./images/first-aid-kit.png" alt="first-aid-kit">
-            <p><span>Shop Instore</span> 7am-8pm Every Day</p>
-        </div>
-        <div class="column3-usp">
-            <img src="./images/shop.png" alt="shop">
-            <p><span>Shop Online</span> 24/7</p>
-        </div>
-        <div class="column4-usp">
-            <img src="./images/shipping.png" alt="shop">
-            <p><span>Free Shippingon</span> orders over $100*</p>
-        </div>
-    </div>
-
-    <!-- NAVBAR-COPY - SECTION 3 -->
-    <div class="navbar-copy universal">
-        <ul>
-            <li><a href="#">Shop All</a></li>
-            <li><a href="#">Health Equipment</a></li>
-            <li><a href="#">Baby</a></li>
-            <li><a href="#">Dental</a></li>
-            <li><a href="#">Diabetes</a></li>
-            <li><a href="#">Eye & Ear</a></li>
-            <li><a href="#">Incontinence</a></li>
-            <li><a href="#">Skin</a></li>
-            <li><a href="#">Sport</a></li>
-        </ul>
-    </div>
-
     <!-- BANNER - SECTION 4 -->
-    <div class="banner">
-        <img src="./images/banner.png" alt="Banner">
-        <div class="banner-heading universal">
-            Home Health <br>Equipment
+    <div class="slick-carousel ">
+        <!-- SLIDE 1 -->
+        <div class="slide-content">
+            <div class="sliderbanner1">
+                <img src="./images/banner.png" alt="">
+            </div>
+            <div class="container">
+                <div class="Slidertext">
+                    <div class="top-heading-slider">
+                        Home Health <br>Equipment
+                    </div>
+                    <div class="banner-subheading">
+                        <p>View our large range of mobility aids and <br>home health equipment for hire</p>
+                    </div>
+                    <div class="banner-button">
+                        <button type="button" onclick="window.location.href = 'index.html';">More Info <i
+                                class="icon-arrow-right-circle"></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="banner-subheading universal">
-            View our large range of mobility aids and <br>home health equipment for hire
+
+        <!-- SLIDE 2 -->
+        <div class="slide-content">
+            <div class="sliderbanner2">
+                <img src="./images/banner1.png" alt="banner1">
+            </div>
+            <div class=" container">
+                <div class="Slidertext">
+                    <div class="top-heading-slider2">
+                        Pharmacist <br>Equipment
+                    </div>
+                    <div class="banner-subheading2">
+                        View our large range of mobility aids and <br>home health equipment for hire
+                    </div>
+                    <div class="banner-button">
+                        <button type="button" onclick="window.location.href = 'index.html';">More Info <i
+                                class="icon-arrow-right-circle"></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="banner-button universal">
-            <button type="button" onclick="window.location.href = 'index.html';">More Info <i
-                    class="icon-arrow-right-circle"></i></button>
+
+        <!-- SLIDE 3 -->
+        <div class="slide-content">
+            <div class="sliderbanner3">
+                <img src="./images/banner3.png" alt="banner1">
+            </div>
+            <div class=" container">
+                <div class="Slidertext">
+                    <div class="top-heading-slider3">
+                        Molecules <br>Equipment
+                    </div>
+                    <div class="banner-subheading2">
+                        View our large range of mobility aids and <br>home health equipment for hire
+                    </div>
+                    <div class="banner-button">
+                        <button type="button" onclick="window.location.href = 'index.html';">More Info <i
+                                class="icon-arrow-right-circle"></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
 
     <!-- MULTIPLE_BANNER - SECTION 5 -->
-    <div class="multiple_banners universal">
-        <div class="row1">
-            <div class="banner1">
-                <img src="./images/banner_1.png" alt="banner1">
-                <p>Equipment Hire<br>
-                    <span>Home Health Equipment</span>
-                </p>
-                <button class="banner1-button" type="button" onclick="window.location.href = 'index.html';">Shop Now <i
-                        class="icon-arrow-right-circle"></i></button>
-            </div>
-            <div class="banner2">
-                <img src="./images/banner_2.png" alt="banner2">
-                <p>Baby<br>
-                    <span>Welcome to Parenthood</span>
-                </p>
-                <button class="banner2-button" type="button" onclick="window.location.href = 'index.html';">Shop Now <i
-                        class="icon-arrow-right-circle"></i></button>
-            </div>
-        </div>
-        <div class="row2">
-            <div class="banner3">
-                <img src="./images/banner_3.png" alt="banner1">
-                <p>Diabetes Products<br>
-                    <span>Blood Glucose Monitor</span>
-                </p>
-                <button class="banner3-button" type="button" onclick="window.location.href = 'index.html';">Shop Now <i
-                        class="icon-arrow-right-circle"></i></button>
-            </div>
-        </div>
-        <div class="row3">
-            <div class="banner4">
-                <img src="./images/banner_4.png" alt="banner1">
-                <p>Home Health<br>
-                    <span>Best Quality Home Health <br><span>Equipment</span></span>
-                </p>
-                <button class="banner4-button" type="button" onclick="window.location.href = 'index.html';">Shop Now <i
-                        class="icon-arrow-right-circle"></i></button>
-            </div>
-            <div class="banner5">
-                <img src="./images/banner_5.png" alt="banner1">
-                <p>Sports<br>
-                    <span>Braces & Supports</span>
-                </p>
-                <button class="banner5-button" type="button" onclick="window.location.href = 'index.html';">Shop Now <i
-                        class="icon-arrow-right-circle"></i></button>
-            </div>
-        </div>
-        <div class="row4">
-            <div class="banner6">
-                <img src="./images/banner_6.png" alt="banner1">
-                <p>Vitamin Products<br>
-                    <span>Amplio</span>
-                </p>
-                <button class="banner6-button" type="button" onclick="window.location.href = 'index.html';">Shop Now <i
-                        class="icon-arrow-right-circle"></i></button>
+    <div class="multiple_banners">
+        <div class="container">
+            <div class="categories">
+                <div class="category-left">
+                    <div class="category-first-left">
+                        <div class="allcatogories">
+                            <img src="./images/banner_1.png" alt="banner1">
+                            <div class="bannerTextAtEnd">
+                                <div class="bannerHeading">
+                                    Equipment Hire
+                                </div>
+                                <div class="bannerSubheading">
+                                    Home Health Equipment
+                                </div>
+                                <a href="#">Shop Now <i class="icon-arrow-right-circle"></i></a>
+                            </div>
+                        </div>
+                        <div class="allcatogories">
+                            <img src="./images/banner_2.png" alt="banner2">
+                            <div class="bannerTextAtEnd">
+                                <div class="bannerHeading">
+                                    Baby
+                                </div>
+                                <div class="bannerSubheading">
+                                    Welcome to Parenthood
+                                </div>
+                                <a href="#">Shop Now <i class="icon-arrow-right-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-second-left">
+                        <div class="allcatogories">
+                            <img src="./images/banner_3.png" alt="banner3">
+                            <div class="bannerTextAtEnd">
+                                <div class="bannerHeading">
+                                    Diabetes Products
+                                </div>
+                                <div class="bannerSubheading">
+                                    Blood Glucose Monitor
+                                </div>
+                                <a href="#">Shop Now <i class="icon-arrow-right-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-right">
+                    <div class="category-first-right">
+                        <div class="allcatogories">
+                            <img src="./images/banner_4.png" alt="banner4">
+                            <div class="bannerTextAtStart">
+                                <div class="bannerHeading">
+                                    Home Health
+                                </div>
+                                <div class="bannerSubheading">
+                                    Best Quality Home Health <br>Equipment
+                                </div>
+                                <a href="#">Shop Now <i class="icon-arrow-right-circle"></i></a>
+                            </div>
+                        </div>
+                        <div class="allcatogories">
+                            <img src="./images/banner_5.png" alt="banner5">
+                            <div class="bannerTextAtStart">
+                                <div class="bannerHeading">
+                                    Sports
+                                </div>
+                                <div class="bannerSubheading">
+                                    Braces & Supports
+                                </div>
+                                <a href="#">Shop Now <i class="icon-arrow-right-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-second-right">
+                        <div class="allcatogories">
+                            <img src="./images/banner_6.png" alt="banner6">
+                            <div class="bannerTextAtEnd">
+                                <div class="bannerHeading">
+                                    Vitamin Products
+                                </div>
+                                <div class="bannerSubheading">
+                                    Amplio
+                                </div>
+                                <a href="#">Shop Now <i class="icon-arrow-right-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- SECTION 6 -->
-    <div class="section6">
-        <div class="line">
-        </div>
-        <ul>
-            <li><a href="#"><span style="color:rgb(24, 124, 191);">Featured</span></a></li>
-            <li><a href="#"><span style="color:rgb(201, 201, 201);">/</span></a></li>
-            <li><a href="#"><a href="#">New Arrivals</a></li>
-            <li><a href="#"><span style="color:rgb(201, 201, 201);">/</span></a></li>
-            <li><a href="#">Clearance Items</a></li>
-        </ul>
-        <p>Our Top Products</p>
-    </div>
 
-    <!-- PRODUCT CARDS -->
-    <div class="productcard universal">
-        <div class="card">
-            <img src="./images/product-card/product1.png" alt="Denim Jeans">
-            <p class="card-heading">M+D Crutch | Innovative Forearm Crutch | Black </p>
-            <div class="price-line1"></div>
-            <p class="price">$19.99 <span> $999.99 </span></p>
+    <!-- PRODUCT CARDS - SECTION 6 -->
+    <section>
+        <div class="product_section">
+            <div class="container">
+                <ul>
+                    <li><a href="#"><span style="color:rgb(24, 124, 191);">Featured</span></a></li>
+                    <li><a href="#"><span style="color:rgb(201, 201, 201);">/</span></a></li>
+                    <li><a href="#"><a href="#">New Arrivals</a></li>
+                    <li><a href="#"><span style="color:rgb(201, 201, 201);">/</span></a></li>
+                    <li><a href="#">Clearance Items</a></li>
+                </ul>
+                <p>Our Top Products</p>
+            </div>
         </div>
-        <div class="card2">
-            <img src="./images/product-card/product2.png" alt="Denim Jeans">
-            <p class="card-heading">Actimove Standard Walker | Lower Leg High-Rise Moon Boot</p>
-            <p class="price">$559.95</p>
+        <div class="productcardSection">
+            <div class="container">
+                <div class="productcard">
+                    <div class="carditems">
+                        <div class="card">
+                            <div class="cardimage1">
+                                <img src="./images/product-card/product1.png" alt="Denim Jeans">
+                                <div class="cardhover">
+                                    <img src="./images/zoombutton.png" alt="zoombutton">
+                                    <button type="button" class="cardbutton"
+                                        onclick="alert('Your Product has been Successfully Added to Cart')">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                            <div class="cardDescription">
+                                <div class="card-heading">
+                                    <h4>M+D Crutch | Innovative Forearm Crutch | Black</h4>
+                                </div>
+                                <div class="price">$19.99<span>
+                                        <div class="price-line1"></div> $999.99
+                                    </span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carditems">
+                        <div class="card">
+                            <div class="cardimage2">
+                                <img src="./images/product-card/product2.png" alt="Denim Jeans">
+                                <div class="cardhover">
+                                    <img src="./images/zoombutton.png" alt="zoombutton">
+                                    <button type="button" class="cardbutton"
+                                        onclick="alert('Your Product has been Successfully Added to Cart')">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                            <div class="cardDescription">
+                                <div class="card-heading">
+                                    <h4>Actimove Standard Walker | Lower Leg High-Rise Moon Boot</h4>
+                                </div>
+                                <div class="price">$559.95</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carditems">
+                        <div class="card">
+                            <div class="cardimage3">
+                                <img src="./images/product-card/product3.jpg" alt="Denim Jeans">
+                                <div class="cardhover">
+                                    <img src="./images/zoombutton.png" alt="zoombutton">
+                                    <button type="button" class="cardbutton"
+                                        onclick="alert('Your Product has been Successfully Added to Cart')">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                            <div class="cardDescription">
+                                <div class="card-heading">
+                                    <h4>Jobst UltraSheer 15-20 Knee High Closed Toe | Black Pattern | Stockings</h4>
+                                </div>
+                                <div class="price">$55.99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carditems">
+                        <div class="card">
+                            <div class="cardimage4">
+                                <img src="./images/product-card/product4.jpg" alt="Denim Jeans">
+                                <div class="cardhover">
+                                    <img src="./images/zoombutton.png" alt="zoombutton">
+                                    <button type="button" class="cardbutton"
+                                        onclick="alert('Your Product has been Successfully Added to Cart')">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                            <div class="cardDescription">
+                                <div class="card-heading">
+                                    <h4>Sterilight SC-320 13 gpm Cobalt series uv system</h4>
+                                </div>
+                                <div class="price">$175.00 <span>
+                                        <div class="price-line2"></div>$195.95
+                                    </span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carditems">
+                        <div class="card">
+                            <div class="cardimage5">
+                                <img src="./images/product-card/product5.jpg" alt="Denim Jeans">
+                                <div class="cardhover">
+                                    <img src="./images/zoombutton.png" alt="zoombutton">
+                                    <button type="button" class="cardbutton"
+                                        onclick="alert('Your Product has been Successfully Added to Cart')">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                            <div class="cardDescription">
+                                <div class="card-heading" style="padding-bottom: 37px;">
+                                    <h4>BioGaia Probiotic Drops 5mL</h4>
+                                </div>
+                                <div class="price">$395.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card3">
-            <img src="./images/product-card/product3.jpg" alt="Denim Jeans">
-            <p class="card-heading">Jobst UltraSheer 15-20 Knee High Closed Toe | Black Pattern | Stockings</p>
-            <p class="price">$55.99</p>
-        </div>
-        <div class="card4">
-            <img src="./images/product-card/product4.jpg" alt="Denim Jeans">
-            <p class="card-heading">Sterilight SC-320 13 gpm Cobalt series uv system</p>
-            <div class="price-line2"></div>
-            <p class="price">$175.00 <span>$195.95</span></p>
-        </div>
-        <div class="card5">
-            <img src="./images/product-card/product5.jpg" alt="Denim Jeans">
-            <p class="card-heading">BioGaia Probiotic Drops 5mL</p>
-            <p class="price">$395.00</p>
-        </div>
-    </div>
+    </section>
 
     <!-- Instore Services -->
-    <div class="instore-services universal">
-        <p class="line"></p>
-        <p class="text">Instore Services</p>
-        <p class="line2"></p>
+    <div class="instore-services">
+        <div class="container">
+            <div class="instore-text"> Instore Services </div>
+            <div class="services_banners">
+                <div class="servicesTop">
+                    <div class="servicesbanner">
+                        <img src="./images/instore-services/instore-services1.png" alt="banner1">
+                        <h4><a href="#"> Perception Services
+                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                            </a></h4>
+                    </div>
+                    <div class="servicesbanner">
+                        <img src="./images/instore-services/instore-services2.png" alt="banner1">
+                        <h4><a href="#"> Baby & Child Health
+                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                            </a></h4>
+                    </div>
+                    <div class="servicesbanner">
+                        <img src="./images/instore-services/instore-services3.png" alt="banner1">
+                        <h4><a href="#" id="services3"> Continence
+                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                            </a></h4>
+                    </div>
+                    <div class="servicesbanner">
+                        <img src="./images/instore-services/instore-services4.png" alt="banner1">
+                        <h4><a href="#" id="services4"> Diabetes
+                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                            </a></h4>
+                    </div>
+                </div>
 
+                <div class="servicesBottom">
+                    <div class="servicesbanner">
+                        <img src="./images/instore-services/instore-services5.png" alt="banner1">
+                        <h4><a href="#" id="services5"> Health Information
+                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                            </a></h4>
+                    </div>
+                    <div class="servicesbanner">
+                        <img src="./images/instore-services/instore-services6.png" alt="banner1">
+                        <h4><a href="#" id="services6"> Medication Aids
+                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                            </a></h4>
+                    </div>
+                    <div class="servicesbanner">
+                        <img src="./images/instore-services/instore-services7.png" alt="banner1">
+                        <h4><a href="#" id="services7"> Gourmet Meals
+                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                            </a></h4>
+                    </div>
+                    <div class="servicesbanner">
+                        <img src="./images/instore-services/instore-services8.png" alt="banner1">
+                        <h4><a href="#" id="services8"> IGA X-press
+                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                            </a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+
+    <!-- OUR TOP PRODUCTS -->
+    <div class="container">
+        <div class="our-top-products">
+            <div class="instore-text"> Our Top Brands </div>
+            <div class="brands">
+                <div class="optifast-brand">
+                    <a href="#"><img src="./images/brands/brand1.jpg" alt="brand1"></a>
+                </div>
+                <div class="amcal-brand">
+                    <a href="#"><img src="./images/brands/brand2.jpg" alt="brand2"></a>
+                </div>
+                <div class="avent-brand">
+                    <a href="#"><img src="./images/brands/brand3.jpg" alt="brand3"></a>
+                </div>
+                <div class="omron-brand">
+                    <a href="#"><img src="./images/brands/brand4.jpg" alt="brand4"></a>
+                </div>
+                <div class="musashi-brand">
+                    <a href="#"><img src="./images/brands/brand5.jpg" alt="brand5"></a>
+                </div>
+                <div class="depend-brand">
+                    <a href="#"><img src="./images/brands/brand6.jpg" alt="brand6"></a>
+                </div>
+            </div>
+
+            <div class="welcomesection">
+                <div class="welcome">
+                    <img src="./images/welcomeimage.jpg" alt="welcomeimage">
+                </div>
+                <div class="welcometext">
+                    <div class="welcomeheading">
+                        <h3>Welcome to <span>SuperPharmacyPlus</span></h3>
+                    </div>
+                    <div class="welcomesubheading">
+                        <p>Your Pharmacy with Convenience and Care<br>
+                            "Empowering People to Live Healthier, Happier Lives"</p>
+                    </div>
+                    <div class="welcomeparenttext">
+                        <p>Welcome to SuperPharmacyPlus. We don't just dispense prescriptions. At our Brisbane Pharmacy,
+                            you can expect a level of service that will enable you make informed choices about your
+                            health
+                            and related conditions.<br><br>
+                            After all, you deserve it. We specialise in woundcare, diabetes, child health, continence,
+                            health & mobility<br>
+                            equipment, and medication management.<br><br>
+                            View our large range of mobility aids and home health equipment for hire.</p>
+                    </div>
+                    <div>
+                        <a href="#"> More About Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- CONTACT US -->
+
+    <div class="contact_detail_section">
+        <div class="container">
+            <div class="footer-section">
+                <div class="footer-contact_detail_section">
+                    <img src="./images/calllogo.png" alt="call-icon">
+                    <p>Speak to a Pharmacist<br><span><a href="tel:0733553052">07 3355 3052</a></span></p>
+                </div>
+                <div class="footer-contact_detail_section">
+                    <img src="./images/openlogo.png" alt="">
+                    <p>Open 7 days<br><span>Mon - Sat 7am to 8pm </span></p>
+                </div>
+                <div class="footer-contact_detail_section ">
+                    <img src="./images/locationlogo.png" alt="">
+                    <p>Our location<br><span>621 Stafford Road, STAFFORD, QLD 4053, Australia</span></p>
+                </div>
+                <div class="footerButton locationsection">
+                    <a href="https://www.google.com/maps/place/SuperPharmacyPlus/@-27.4075278,152.9994517,19.25z/data=!4m5!3m4!1s0x6b91579ba915741f:0x2ac447c03da4c3a6!8m2!3d-27.407456!4d152.999603"
+                        target="_blank">View
+                        on Maps</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mapsimage">
+        <a href="https://www.google.com/maps/place/SuperPharmacyPlus/@-27.4075278,152.9994517,19.25z/data=!4m5!3m4!1s0x6b91579ba915741f:0x2ac447c03da4c3a6!8m2!3d-27.407456!4d152.999603"
+            target="_blank"><img src="./images/location.png" alt="location" style="width: 100%;"></a>
+    </div>
+
+    <!-- NEWS LETTER -->
+    <footer class="container">
+        <div class="newsletter">
+            <div class="newsletterSection">
+                <div class="footer-contact_detail_section ">
+                    <p>Sign up for our Newsletter<br><span> Sign up
+                            for
+                            exclusive email, special & latest news</span></p>
+                </div>
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Name" name="name" required>
+                    <input type="email" placeholder="Email address" name="mail" required>
+                    <button type="submit" class="newsletterButton">Subscribe
+                        <i class="fa fa-location-arrow"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footermiddle">
+            <div class="quicklinkssection">
+                <div class="quicklinksTop">
+                    <h3>Quick Links</h3>
+                </div>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Baby & Child Health</a></li>
+                    <li><a href="#">Continence</a></li>
+                    <li><a href="#">Free Diabetis Education</a></li>
+                    <li><a href="#">Free diet consoltant</a></li>
+                    <li><a href="#">Equipment hier</a></li>
+                    <li><a href="#">Health Information</a></li>
+                </ul>
+                <div class="quicklinksBottom">
+                    <a href="#">View All</a>
+                </div>
+            </div>
+            <div class="quicklinkssection">
+                <div class="quicklinksTop">
+                    <h3>Categories</h3>
+                </div>
+                <ul>
+                    <li><a href="#">Equipment Hire</a></li>
+                    <li><a href="#">Health Equipment</a></li>
+                    <li><a href="#">Baby</a></li>
+                    <li><a href="#">Dental</a></li>
+                    <li><a href="#">Diabetis</a></li>
+                    <li><a href="#">Eye And Ear</a></li>
+                    <li><a href="#">Incontinence</a></li>
+                    <li><a href="#">Quit</a></li>
+                </ul>
+                <div class="quicklinksBottom">
+                    <a href="#">View All</a>
+                </div>
+            </div>
+            <div class="quicklinkssection">
+                <div class="quicklinksTop">
+                    <h3>Customer Help</h3>
+                </div>
+                <ul>
+                    <li><a href="#">Help Me Track My Order</a></li>
+                    <li><a href="#">Sign Into My Account</a></li>
+                    <li><a href="#">Log Out Of My Account</a></li>
+                    <li><a href="#">Create An Account</a></li>
+                    <li><a href="#">Request Wholesale Pricing</a></li>
+                    <li><a href="#">Delivery Information</a></li>
+                    <li><a href="#">Refunds Policy</a></li>
+                    <li><a href="#">Terms And Conditions</a></li>
+                    <li><a href="#">Confidentiality Policy</a></li>
+                </ul>
+
+            </div>
+            <div class="quicklinkssection">
+                <div class="quicklinks">
+                    <h3>Contact With Us</h3>
+                </div>
+                <div class="socialmedia">
+                    <div class="facebook">
+                        <a href="https://www.facebook.com" target="_blank"><img src="./images/footericons/fb.png"
+                                alt="fb"></a>
+                    </div>
+                    <div class="twitter">
+                        <a href="https://www.twitter.com" target="_blank"><img src="./images/footericons/twitter.png"
+                                alt="twitter"></a>
+                    </div>
+                    <div class="google">
+                        <a href="https://www.google.com" target="_blank"><img src="./images/footericons/google.png"
+                                alt="google"></a>
+                    </div>
+                    <div class="gmail">
+                        <a href="https://www.gmail.com" target="_blank"><img src="./images/footericons/email.png"
+                                alt="email"></a>
+                    </div>
+                    <div class="callfooter">
+                        <a href="tel:0733553052" target="_blank"><img src="./images/footericons/call.png"
+                                alt="call"></a>
+                    </div>
+                    <div class="chatwithus">
+                        <a href="#" target="_blank"><img src="./images/footericons/cahtwithus.png" alt="chat"></a>
+                    </div>
+                </div>
+                <div class="paymentmethods">
+                    <p><span>Payment </span>Method</p>
+                    <div class="paymentscards">
+                        <div class="paypal">
+                            <a href="https://www.paypal.com/in/webapps/mpp/home" target="_blank"><img
+                                    src="./images/footericons/paypal.png" alt="fb"></a>
+                        </div>
+                        <div class="mastercard">
+                            <a href="https://www.mastercard.co.in/" target="_blank"><img
+                                    src="./images/footericons/mastercard.png" alt="mastercard"></a>
+                        </div>
+                        <div class="visa">
+                            <a href="https://www.visa.co.in/" target="_blank"><img src="./images/footericons/visa.png"
+                                    alt="visa"></a>
+                        </div>
+                        <div class="discovery">
+                            <a href="https://www.discover.com/" target="_blank"><img
+                                    src="./images/footericons/discovery.png" alt="discovery"></a>
+                        </div>
+                        <div class="amex">
+                            <a href="https://www.americanexpress.com/en-in/" target="_blank"><img
+                                    src="./images/footericons/amex.png" alt="amex"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footertrustlogos">
+                    <div class="payalverified">
+                        <a href="https://www.paypal.com/uk/smarthelp/article/how-do-i-verify-my-paypal-account-faq444"
+                            target="_blank"><img src="./images/footericons/paypalVerified.png" alt="paypalVerified"></a>
+                    </div>
+                    <div class="mcafeesecure">
+                        <a href="https://www.mcafee.com/" target="_blank"><img
+                                src="./images/footericons/mcafeeSecure.png" alt="mcafeeSecure"></a>
+                    </div>
+                    <div class="geotrust">
+                        <a href="https://www.geotrust.com/" target="_blank"><img src="./images/footericons/geoTrust.png"
+                                alt="geoTrust"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" footerbottom">
+            <p>&#169; 2018 <span><a href="./index.html">SuperPharmacyPlus.</a> </span> All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+
+
 </body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js'></script>
+<script src="./script.js"></script>
 
 </html>
