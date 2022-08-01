@@ -17,7 +17,7 @@
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    /* padding: 40px 0px; */
+    padding: 0px 0px;
 }
 
 .headertop {
@@ -1045,46 +1045,27 @@ input[type=submit] {
     font-size: 15px;
 }
 
-.socialmedia {
-    align-items: center;
-    justify-content: space-around;
-    gap: 10px;
-    display: flex;
+.socialmedia ul li {
+    display: inline-block;
+    padding: 2px 4px;
 }
 
-.facebook a img:hover {
-    background: #67a2ffba;
+.socialmedia ul {
+    padding: 0;
+}
+
+.socialmedia ul li img:hover {
+    background: #cfebff;
     border-radius: 20px;
 }
 
-.twitter a img:hover {
-    background: #1cb7eb5c;
-    border-radius: 20px;
+.paymentmethods ul li {
+    display: inline;
+    padding-right: 5px;
 }
 
-.google a img:hover {
-    background: rgb(237 35 40 / 35%);
-    border-radius: 20px;
-}
-
-.gmail a img:hover {
-    background: rgb(251 242 82 / 54%);
-    border-radius: 20px;
-}
-
-.callfooter a img:hover {
-    background: #1cb7eb5c;
-    border-radius: 20px;
-}
-
-.chatwithus a img:hover {
-    background: #78b5024a;
-    border-radius: 20px;
-}
-
-.paymentscards {
-    display: flex;
-    gap: 10px;
+.paymentmethods ul {
+    padding: 0;
 }
 
 .paymentmethods p {
@@ -1097,30 +1078,17 @@ input[type=submit] {
     font-weight: 600;
 }
 
-.paypal,
-.mastercard,
-.visa,
-.discovery,
-.amex {
-    padding: 10px 15px;
-    border: 1px solid rgb(233, 233, 233);
-    border-radius: 3px;
+.footertrustlogos ul li {
+    display: inline;
+    padding-right: 30px;
 }
 
-.paypal:hover,
-.amex:hover,
-.mastercard:hover,
-.discovery:hover,
-.visa:hover {
-    border: 1px solid rgb(14, 102, 161);
-}
-
-.footertrustlogos {
-    padding: 25px 0 0 0;
-    display: flex;
+.footertrustlogos ul {
     align-items: center;
-    gap: 20px;
+    display: flex;
+    padding: 12px 0;
 }
+
 
 .footerbottom p span a {
     color: rgb(14, 102, 161);
