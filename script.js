@@ -5,12 +5,12 @@ $().ready(function () {
         dots: false,
         slidesToShow: 1,
         infinite: true,
-        autoplay: true,
-        autoplaySpeed: 1000,
+        autoplay: false,
+        autoplaySpeed: 3000,
         fade: true,
         // centerMode: true,
         // variableWidth: true
         // adaptiveHeight: true,
-        focusOnSelect: false,
+        focusOnSelect: true,
     });
 });

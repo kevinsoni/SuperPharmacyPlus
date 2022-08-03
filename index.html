@@ -20,7 +20,9 @@
         <div class="headertop">
             <div class="container">
                 <div class="headerContainer">
-                    <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
+                    <div class="logo">
+                        <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
+                    </div>
                     <div class="header-search">
                         <form action="/action_page.php" target="_blank" method="get">
                             <input type="text" placeholder="Search entire store here" name="search">
@@ -54,12 +56,13 @@
                             <option value="inr">INR</option>
                             <option value="inr">INR</option>
                         </select>
-                        <div class="currency">
+                        <p class="currency">
                             $0.00
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
+
         </div>
 
 
@@ -136,7 +139,7 @@
                         <p>View our large range of mobility aids and <br>home health equipment for hire</p>
                     </div>
                     <div class="banner-button">
-                        <button type="button" onclick="window.location.href = 'index.html';">More Info <i
+                        <button type="button" onclick="window.location.href = 'index.html';">More Info &nbsp;<i
                                 class="icon-arrow-right-circle"></i></button>
                     </div>
                 </div>
@@ -310,7 +313,7 @@
                             </div>
                             <div class="cardDescription">
                                 <div class="card-heading">
-                                    <h4>M+D Crutch | Innovative Forearm Crutch | Black</h4>
+                                    <h5>M+D Crutch | Innovative Forearm Crutch | Black</h5>
                                 </div>
                                 <div class="price">$19.99<span>
                                         <div class="price-line1"></div> $999.99
@@ -331,7 +334,7 @@
                             </div>
                             <div class="cardDescription">
                                 <div class="card-heading">
-                                    <h4>Actimove Standard Walker | Lower Leg High-Rise Moon Boot</h4>
+                                    <h5>Actimove Standard Walker | Lower Leg High-Rise Moon Boot</h5>
                                 </div>
                                 <div class="price">$559.95</div>
                             </div>
@@ -350,7 +353,7 @@
                             </div>
                             <div class="cardDescription">
                                 <div class="card-heading">
-                                    <h4>Jobst UltraSheer 15-20 Knee High Closed Toe | Black Pattern | Stockings</h4>
+                                    <h5>Jobst UltraSheer 15-20 Knee High Closed Toe | Black Pattern | Stockings</h5>
                                 </div>
                                 <div class="price">$55.99</div>
                             </div>
@@ -369,7 +372,7 @@
                             </div>
                             <div class="cardDescription">
                                 <div class="card-heading">
-                                    <h4>Sterilight SC-320 13 gpm Cobalt series uv system</h4>
+                                    <h5>Sterilight SC-320 13 gpm Cobalt series uv system</h5>
                                 </div>
                                 <div class="price">$175.00 <span>
                                         <div class="price-line2"></div>$195.95
@@ -390,7 +393,7 @@
                             </div>
                             <div class="cardDescription">
                                 <div class="card-heading" style="padding-bottom: 37px;">
-                                    <h4>BioGaia Probiotic Drops 5mL</h4>
+                                    <h5>BioGaia Probiotic Drops 5mL</h5>
                                 </div>
                                 <div class="price">$395.00</div>
                             </div>
@@ -408,55 +411,83 @@
             <div class="services_banners">
                 <div class="servicesTop">
                     <div class="servicesbanner">
-                        <img src="./images/instore-services/instore-services1.png" alt="banner1">
-                        <h4><a href="#"> Perception Services
+                        <img src="./images/instore-services/instore-services1.png" class="instoreimage" alt="banner1">
+                        <h4><a href="#" class="instoreText"> Perception Services
                                 <i class="icon-arrow-right-circle servicebuttonsize"></i>
                             </a></h4>
                     </div>
                     <div class="servicesbanner">
-                        <img src="./images/instore-services/instore-services2.png" alt="banner1">
-                        <h4><a href="#"> Baby & Child Health
-                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
-                            </a></h4>
+                        <div class="instoreimage">
+                            <img src="./images/instore-services/instore-services2.png" alt="banner1">
+                        </div>
+                        <div class="instoreText">
+                            <h4><a href="#"> Baby & Child Health
+                                    <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                                </a></h4>
+                        </div>
                     </div>
                     <div class="servicesbanner">
-                        <img src="./images/instore-services/instore-services3.png" alt="banner1">
-                        <h4><a href="#" id="services3"> Continence
-                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
-                            </a></h4>
+                        <div class="instoreimage">
+                            <img src="./images/instore-services/instore-services3.png" alt="banner1">
+                        </div>
+                        <div class="instoreText">
+                            <h4><a href="#" id="services3"> Continence
+                                    <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                                </a></h4>
+                        </div>
                     </div>
                     <div class="servicesbanner">
-                        <img src="./images/instore-services/instore-services4.png" alt="banner1">
-                        <h4><a href="#" id="services4"> Diabetes
-                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
-                            </a></h4>
+                        <div class="instoreimage">
+                            <img src="./images/instore-services/instore-services4.png" alt="banner1">
+                        </div>
+                        <div class="instoreText">
+                            <h4><a href="#" id="services4"> Diabetes
+                                    <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                                </a></h4>
+                        </div>
                     </div>
                 </div>
 
                 <div class="servicesBottom">
                     <div class="servicesbanner">
-                        <img src="./images/instore-services/instore-services5.png" alt="banner1">
-                        <h4><a href="#" id="services5"> Health Information
-                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
-                            </a></h4>
+                        <div class="instoreimage">
+                            <img src="./images/instore-services/instore-services5.png" alt="banner1">
+                        </div>
+                        <div class="instoreText">
+                            <h4><a href="#" id="services5"> Health Information
+                                    <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                                </a></h4>
+                        </div>
                     </div>
                     <div class="servicesbanner">
-                        <img src="./images/instore-services/instore-services6.png" alt="banner1">
-                        <h4><a href="#" id="services6"> Medication Aids
-                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
-                            </a></h4>
+                        <div class="instoreimage">
+                            <img src="./images/instore-services/instore-services6.png" alt="banner1">
+                        </div>
+                        <div class="instoreText">
+                            <h4><a href="#" id="services6"> Medication Aids
+                                    <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                                </a></h4>
+                        </div>
                     </div>
                     <div class="servicesbanner">
-                        <img src="./images/instore-services/instore-services7.png" alt="banner1">
-                        <h4><a href="#" id="services7"> Gourmet Meals
-                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
-                            </a></h4>
+                        <div class="instoreimage">
+                            <img src="./images/instore-services/instore-services7.png" alt="banner1">
+                        </div>
+                        <div class="instoreText">
+                            <h4><a href="#" id="services7"> Gourmet Meals
+                                    <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                                </a></h4>
+                        </div>
                     </div>
                     <div class="servicesbanner">
-                        <img src="./images/instore-services/instore-services8.png" alt="banner1">
-                        <h4><a href="#" id="services8"> IGA X-press
-                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
-                            </a></h4>
+                        <div class="instoreimage">
+                            <img src="./images/instore-services/instore-services8.png" alt="banner1">
+                        </div>
+                        <div class="instoreText">
+                            <h4><a href="#" id="services8"> IGA X-press
+                                    <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                                </a></h4>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -491,33 +522,27 @@
             </div>
 
             <div class="welcomesection">
-                <div class="welcome">
+                <div class="welcomeimage">
                     <img src="./images/welcomeimage.jpg" alt="welcomeimage">
                 </div>
                 <div class="welcometext">
-                    <div class="welcomeheading">
-                        <h3>Welcome to <span>SuperPharmacyPlus</span></h3>
-                    </div>
-                    <div class="welcomesubheading">
-                        <p>Your Pharmacy with Convenience and Care<br>
-                            "Empowering People to Live Healthier, Happier Lives"</p>
-                    </div>
-                    <div class="welcomeparenttext">
-                        <p>Welcome to SuperPharmacyPlus. We don't just dispense prescriptions. At our Brisbane Pharmacy,
-                            you can expect a level of service that will enable you make informed choices about your
-                            health
-                            and related conditions.<br><br>
-                            After all, you deserve it. We specialise in woundcare, diabetes, child health, continence,
-                            health & mobility<br>
-                            equipment, and medication management.<br><br>
-                            View our large range of mobility aids and home health equipment for hire.</p>
-                    </div>
-                    <div>
-                        <a href="#"> More About Us</a>
-                    </div>
+                    <h3>Welcome to <span>SuperPharmacyPlus</span></h3>
+                    <p>Your Pharmacy with Convenience and Care<br>
+                        "Empowering People to Live Healthier, Happier Lives"</p>
+                    <p>Welcome to SuperPharmacyPlus. We don't just dispense prescriptions. At our Brisbane Pharmacy,
+                        you can expect a level of service that will enable you make informed choices about your
+                        health
+                        and related conditions.</p>
+                    <p>After all, you deserve it. We specialise in woundcare, diabetes, child health, continence,
+                        health & mobility
+                        equipment, and medication management.</p>
+                    <p>View our large range of mobility aids and home health equipment for hire.</p>
+                    <a href="#"> More About Us</a>
                 </div>
             </div>
         </div>
+    </div>
+    </div>
     </div>
     </div>
 
@@ -555,11 +580,11 @@
     <!-- NEWS LETTER -->
     <footer class="container">
         <div class="newsletter">
+
             <div class="newsletterSection">
                 <div class="footer-contact_detail_section ">
-                    <p>Sign up for our Newsletter<br><span> Sign up
-                            for
-                            exclusive email, special & latest news</span></p>
+                    <p>Sign up for our Newsletter</p>
+                    <p> Sign up for exclusive email, special & latest news</p>
                 </div>
                 <form action="/action_page.php">
                     <input type="text" placeholder="Name" name="name" required>
@@ -568,6 +593,7 @@
                         <i class="fa fa-location-arrow"></i>
                     </button>
                 </form>
+
             </div>
         </div>
 
