@@ -7,6 +7,12 @@
     src: url(MYRIADPRO-REGULAR.otf);
 }
 
+html {
+    font-size: 62.5%;
+    transition: all 0.3s;
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -21,11 +27,13 @@ img {
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 40px;
 }
+
 
 .headertop {
     background-color: rgb(251, 242, 82);
-    padding: 10px 0;
+    padding: 1rem 0;
 }
 
 .headerContainer {
@@ -34,15 +42,55 @@ img {
     justify-content: space-between;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.mobile-nav i {
+    padding: 4rem 1rem;
+    font-size: 4.5rem;
+    color: #0e66a1;
+    outline: none;
+    cursor: pointer;
+}
+
+.primary-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#hero-section {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+/* Responsive css */
+
+
+
+
+
 .header-search form {
     position: relative;
 }
 
 .header-search .fa-search {
-    padding: 0.4427083333333333vw;
-    border-radius: 3px;
+    padding: .85rem;
+    border-radius: .3rem;
     background: rgb(9, 115, 186);
-    font-size: 0.78125vw;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
@@ -50,20 +98,22 @@ img {
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: .5rem;
+    right: .5rem;
+    background: none;
 }
 
 .header-search input[type=text] {
-    padding: 0.6770vw 12.96875vw 0.6770vw 0.5208vw;
-    font-size: 0.7291vw;
+    padding: 1.3rem 24rem 1.3rem 1rem;
+    font-size: 1.4rem;
     border: none;
-    border-radius: 0.3125em;
+    border-radius: .3rem;
     background-color: rgb(255, 255, 255);
+    transition: all 0.5s;
 }
 
 .header-search input:hover {
-    box-shadow: 2px 2px 10px 0px rgb(0, 0, 0);
+    box-shadow: .2rem .2rem 1rem 0rem rgb(0, 0, 0);
 }
 
 .header-call {
@@ -71,24 +121,25 @@ img {
     align-items: center;
     border-right-style: solid;
     border-color: #fff;
-    border-width: 2px;
-    margin-top: 1.25em;
-    margin-bottom: 1.25em;
+    border-width: .2rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    padding: 0 1rem;
 }
 
 .header-call img {
-    padding: 0px 10px;
+    padding: 0rem 1rem;
 }
 
 .header-call p {
-    font-size: 13px;
+    font-size: 1.3rem;
     font-family: 'Ubuntu', sans-serif;
-    padding-right: 15px;
+    padding-right: 1.5rem;
 }
 
 .header-call p span a {
     color: rgb(9, 115, 186);
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: bold;
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
@@ -99,17 +150,13 @@ img {
     align-items: center;
     border-right-style: solid;
     border-color: #fff;
-    border-width: 2px;
-    padding-right: 15px;
+    border-width: .2rem;
+    padding: 0 0.8rem;
 }
 
-/* .header-account img {
-    padding-right: 5px;
-} */
-
 .header-account p {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .header-account p form {
@@ -122,25 +169,29 @@ img {
     display: inline-block;
     align-items: center;
     position: relative;
+    padding: 0 1rem;
+}
+
+.cart {
+    position: absolute;
+    display: contents;
 }
 
 #carticon {
-    /* padding-right: 5px; */
-    /* padding-top: 10px; */
     position: relative;
-    top: 5px;
+    top: .5rem;
 }
 
 #auslogo {
     position: relative;
-    bottom: 20px;
-    left: 6px;
+    bottom: 2rem;
+    left: .6rem;
 }
 
 .dropbtn {
-    font-size: 16px;
+    font-size: 1.6rem;
     border: none;
-    padding: 15px 10px 10px 10px;
+    padding: 1.5rem 1rem 1rem 1rem;
     background-color: rgb(251, 242, 82);
 }
 
@@ -149,12 +200,16 @@ img {
     display: inline-block;
 }
 
+.dropdown-content ul li a {
+    font-size: 1.5rem;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
-    min-width: 160px;
-    background-color: #fff;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 12rem;
+    background-color: rgb(181 180 180);
+    box-shadow: rgb(14 102 161) 1rem 2rem 3rem 0rem;
     z-index: 1;
 }
 
@@ -164,7 +219,7 @@ img {
 
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 1.2rem 1.6rem;
     text-decoration: none;
     display: block;
 }
@@ -183,8 +238,8 @@ img {
     border: none;
     background-color: rgb(255 255 255 / 22%);
     color: #fff;
-    font-size: 16px;
-    padding: 10px;
+    font-size: 1.6rem;
+    padding: 1rem;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -196,16 +251,15 @@ img {
 .dropdown-contentShopAll {
     display: none;
     position: absolute;
-    background-color: #000;
-    min-width: 140px;
-    /* background-color: rgb(14 102 161 / 87%); */
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: rgb(110 3 3);
+    min-width: 14rem;
+    /* box-shadow: rgb(254 210 0) 1rem 1rem 3rem 0rem; */
     z-index: 1;
 }
 
 .dropdown-contentShopAll a {
     color: black;
-    padding: 12px 16px;
+    padding: 1.2rem 1.6rem;
     text-decoration: none;
     display: block;
 }
@@ -213,6 +267,7 @@ img {
 .dropdown-contentShopAll a:hover {
     background-color: #0973ba;
     color: #fff;
+    box-shadow: rgb(254 210 0 / 88%) 0rem 0rem 1rem 0rem;
 }
 
 .dropdownShopAll:hover .dropdown-contentShopAll {
@@ -221,38 +276,40 @@ img {
 
 .cart-no {
     position: absolute;
-    top: 0px;
-    right: 108px;
-    width: 16px;
+    top: 0rem;
+    right: 10.8rem;
+    width: 1.6rem;
 }
 
 .cart_number {
     position: absolute;
     color: rgb(255, 255, 255);
-    bottom: 22px;
-    right: 75px;
-    font-size: 13px;
+    bottom: 2.2rem;
+    right: 8.5rem;
+    font-size: 1.3rem;
     background: rgb(237, 35, 40);
-    border-radius: 10px;
+    border-radius: 1.0rem;
 }
 
 #currencyselector {
     border: none;
     background: none;
     position: relative;
-    bottom: 20px;
-    left: 4px;
+    bottom: 2rem;
+    left: .4rem;
+    font-size: 1.4rem;
 }
 
 .currency {
     position: absolute;
-    left: 34px;
-    top: 18px;
+    left: 4.2rem;
+    top: 1.8rem;
+    font-size: 1.6rem;
 }
 
 /* USP - SECTION 2 */
 .headermiddle {
-    padding: 10.5px 0;
+    padding: 1.05rem 0;
 }
 
 .usp {
@@ -267,8 +324,8 @@ img {
 }
 
 .uspText {
-    font-size: 20px;
-    padding-left: 10px;
+    font-size: 2rem;
+    padding-left: 1rem;
 }
 
 .uspText span {
@@ -282,13 +339,8 @@ img {
     background-color: #0E66A1;
 }
 
-/* .navbar-copy {
-    height: auto;
-    background-color: #0E66A1;
-} */
-
 .navbar-copy ul {
-    padding: 5px 0;
+    padding: .5rem 0;
 }
 
 .navbar-copy ul li {
@@ -299,64 +351,57 @@ img {
 .navbar-copy ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
-    padding-left: 30px;
+    font-size: 1.8rem;
+    padding-left: 3rem;
     font-family: 'Roboto', sans-serif;
 }
 
 /* BANNER - SECTION 4 */
 .banner {
-    padding-top: 1px 0 0 0;
+    padding-top: .1rem 0 0 0;
     position: relative;
 }
 
 /*  */
 .bannertext {
     position: absolute;
-    top: 95px;
+    top: 9.5rem;
 }
 
-/* .banner-heading {
-    font-size: 72px;
-    font-weight: 800;
-    color: #fff;
-    font-family: 'Ubuntu', sans-serif;
-    padding-bottom: 25px;
-} */
-
-
 .banner-subheading {
-    font-size: 1.25vw;
+    font-size: 2.4rem;
     font-weight: 200;
     color: #fff;
     font-family: 'Ubuntu', sans-serif;
-    line-height: 1.3em;
-    padding-bottom: 45px;
+    padding-bottom: 4.5rem;
 }
 
 .banner-subheading2 {
-    font-size: 1.25vw;
+    font-size: 2.4rem;
     font-weight: 200;
     color: rgb(0, 0, 0);
     font-family: 'Ubuntu', sans-serif;
-    line-height: 1.3em;
-    padding-bottom: 2.34375vw;
+    padding-bottom: 4.5rem;
 }
 
-.banner-button button {
-    border: none;
+.Slidertext a {
     color: #fff;
-    cursor: pointer;
-    font-size: 1.1458333333333333vw;
-    padding: 0.52vw 0.9375vw;
-    display: flex;
+    font-size: 2.0rem;
+    padding: 1rem 1.8rem;
     background-color: rgb(237, 35, 40);
     font-family: 'Ubuntu', sans-serif;
-    box-shadow: 2px 3px 12px #000;
+    box-shadow: 0.2rem 0.3rem 1.2rem #000;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.Slidertext a:hover {
+    border-radius: 1rem;
+    box-shadow: none;
 }
 
 .icon-arrow-right-circle {
-    font-size: 1.1458333333333333vw;
+    font-size: 2.0rem;
 }
 
 /* MULTIPLE_BANNER - SECTION 5 */
@@ -367,6 +412,7 @@ img {
 
 .categories {
     display: inline-flex;
+    transition: all 0.8s;
 }
 
 .category-left {
@@ -379,42 +425,43 @@ img {
 
 /*  */
 .allcatogories {
-    padding: 20px 20px 15px 0;
+    padding: 2rem 2rem 1.5rem 0;
     position: relative;
 }
 
 .category-first-left .allcatogories:nth-child(2) {
-    padding: 0 20px 20px 0;
+    padding: 0 2rem 2rem 0;
     position: relative;
 }
 
 .category-first-right .allcatogories:nth-child(2) {
-    padding: 0 20px 20px 0;
+    padding: 0 2rem 2rem 0;
     position: relative;
 }
 
 .bannerTextAtStart {
-    top: 40px;
-    left: 15px;
+    top: 4rem;
+    left: 1.5rem;
     position: absolute;
+    text-align: left;
 }
 
 .bannerTextAtEnd {
-    top: 40px;
-    right: 35px;
+    top: 4rem;
+    right: 3.5rem;
     position: absolute;
     text-align: right;
 }
 
 .bannerHeading {
-    font-size: 1.1458333333333333vw;
+    font-size: 2.2rem;
     font-weight: 800;
     font-family: 'Ubuntu', sans-serif;
 }
 
 .bannerSubheading {
-    font-size: 0.7291666666666666vw;
-    padding: 5px 0 15px 0;
+    font-size: 1.4rem;
+    padding: .5rem 0 1.5rem 0;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -423,11 +470,11 @@ img {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 900;
     text-decoration: none;
-    font-size: 0.8333333333333334vw;
+    font-size: 1.5rem;
 }
 
 .categories .icon-arrow-right-circle {
-    font-size: 11px;
+    font-size: 1.1rem;
     color: rgb(237, 35, 40);
     font-weight: 900;
 }
@@ -435,15 +482,20 @@ img {
 /* SECTION - 6 */
 .product_section {
     text-align: center;
-    padding: 30px 0;
+    padding: 3rem 0;
     align-items: center;
+}
+
+.productcardSection {
+    padding: 0;
+    transition: all 0.8s;
 }
 
 .product_section ul li {
     list-style-type: none;
     display: contents;
-    font-size: 1.25vw;
-    padding: 1px;
+    font-size: 2.4rem;
+    padding: .1rem;
     position: absolute;
     color: rgb(201, 201, 201);
     background-color: #fff;
@@ -452,30 +504,30 @@ img {
 .product_section ul li a {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 600;
-    padding: 0 10px;
-    font-size: 22px;
+    padding: 0 1rem;
+    font-size: 2.2rem;
     font-family: 'Ubuntu', sans-serif;
     background-color: #fff;
 }
 
 .product_section ul li:first-child::before {
     content: " ";
-    border: 1px solid #ed2328;
-    width: 100px;
+    border: .1rem solid #ed2328;
+    width: 10rem;
     display: inline-block;
     position: relative;
-    bottom: 5px;
+    bottom: .5rem;
 }
 
 .product_section ul li:last-child:after {
     content: " ";
-    border: 1px solid #ed2328;
-    width: 100px;
+    border: .1rem solid #ed2328;
+    width: 10rem;
     display: inline-block;
     position: relative;
-    bottom: 5px;
+    bottom: .5rem;
 }
 
 .product_section ul li a:hover {
@@ -483,19 +535,19 @@ img {
 }
 
 .product_section p {
-    font-size: 28px;
+    font-size: 2.8rem;
     text-align: center;
-    padding: 15px 0;
+    padding: 1.5rem 0;
     font-family: 'RageItalic';
     color: rgb(201, 201, 201);
 }
 
 .product_section .line {
-    border-top: 2px solid #ed2328;
-    margin: 0 580px;
+    border-top: .2rem solid #ed2328;
+    margin: 0 58rem;
     position: relative;
     color: rgb(237, 35, 40);
-    top: 15px;
+    top: 1.5rem;
     z-index: -1;
 }
 
@@ -503,7 +555,7 @@ img {
 .productcard {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .carditems {
@@ -511,85 +563,76 @@ img {
 }
 
 .card {
-    max-width: 300px;
+    max-width: 30rem;
     text-align: center;
     font-family: arial;
 }
 
 .card .card-heading h5 {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
 
 .card .card-heading {
-    padding-bottom: 20px;
-    /* font-weight: 600; */
-    /* font-size: 15px; */
+    padding-bottom: 2rem;
 }
+
+/* .card .cardDescription .card-heading:last-child {
+    padding-bottom: 3.7rem;
+} */
 
 .price {
     color: #187CBF;
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 600;
 }
 
+/* .price:nth-child(5) {
+    padding-top: 15px;
+} */
+
 .cardDescription {
-    padding: 20px 10px;
+    padding: 2rem 1rem;
 }
 
 .price span {
     color: rgb(201, 201, 201);
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 200;
-    padding-left: 5px;
+    padding-left: .5rem;
     position: relative;
 }
 
 .price-line1 {
-    border-top: 2px solid #ed2328;
-    padding: 0 25px;
+    border-top: .2rem solid #ed2328;
+    padding: 0 2.5rem;
     left: 25%;
-    bottom: 10px;
+    bottom: 1rem;
     position: absolute;
     transform: rotate(320deg);
 }
 
 .price-line2 {
-    border-top: 2px solid #ed2328;
-    padding: 0 25px;
+    border-top: .2rem solid #ed2328;
+    padding: 0 2.5rem;
     right: 10%;
-    bottom: 10px;
+    bottom: 1rem;
     position: absolute;
     transform: rotate(320deg);
 }
 
-.cardimage1 {
-    position: relative;
-}
-
-.cardimage2 {
-    position: relative;
-}
-
-.cardimage3 {
-    position: relative;
-}
-
-.cardimage4 {
-    position: relative;
-}
-
-.cardimage5 {
-    position: relative;
-}
-
+.cardimage1,
+.cardimage2,
+.cardimage3,
+.cardimage4,
+.cardimage5,
 .cardimage6 {
     position: relative;
 }
 
 .cardhover {
-    gap: 10px;
+    gap: 1rem;
     top: 50%;
     display: flex;
     position: absolute;
@@ -598,20 +641,22 @@ img {
 }
 
 .cardbutton {
-    padding: 11px 25px;
+    padding: 1.1rem 2.5rem;
     background-color: #0973ba;
-    border-radius: 5px;
+    border-radius: .5rem;
     color: #fff;
-    border: 1px solid;
-    font-size: 15px;
+    border: .1rem solid;
+    font-size: 1.5rem;
     font-family: arial;
     cursor: pointer;
     position: relative;
     opacity: 0;
+    transition: all 0.5s;
 }
 
 .cardhover img {
     opacity: 0;
+    transition: all 0.5s;
     position: relative;
     cursor: pointer;
 }
@@ -622,8 +667,7 @@ img {
 .cardimage4:hover .cardbutton,
 .cardimage5:hover .cardbutton,
 .cardimage6:hover .cardbutton {
-    transition: all 0.5s ease-in-out;
-    border: 1px solid #0973ba;
+    border: .1rem solid #0973ba;
     opacity: 1;
 }
 
@@ -633,50 +677,47 @@ img {
 .cardimage4:hover .cardhover img,
 .cardimage5:hover .cardhover img,
 .cardimage6:hover .cardhover img {
-    transition: all 0.5s ease-in-out;
     opacity: 1;
 }
-
-
 
 /* INSTORE-SERVICES */
 .instore-services {
     background-color: rgb(249, 249, 249);
-    padding: 50px 0 60px 0;
+    padding: 5rem 0 6rem 0;
 }
 
 
 .instore-text::before {
     content: " ";
-    border: 1px solid #ed2328;
-    width: 100px;
+    border: .1rem solid #ed2328;
+    width: 10rem;
     display: inline-block;
     position: relative;
-    bottom: 5px;
+    bottom: .5rem;
 }
 
 .instore-text {
     text-align: center;
     font-weight: 600;
-    padding: 0 10px 25px 10px;
-    font-size: 22px;
+    padding: 0 1rem 2.5rem 1rem;
+    font-size: 2.2rem;
     font-family: 'Ubuntu', sans-serif;
 }
 
 .instore-text::after {
     content: " ";
-    border: 1px solid #ed2328;
-    width: 100px;
+    border: .1rem solid #ed2328;
+    width: 10rem;
     display: inline-block;
     position: relative;
-    bottom: 5px;
+    bottom: .5rem;
 }
 
 
 .servicesbanner::before {
     content: " ";
     position: absolute;
-    border: 2px solid #fff;
+    border: .2rem solid #fff;
     top: 1%;
     left: 1%;
     right: 1%;
@@ -687,7 +728,7 @@ img {
 .instoreText::before {
     content: " ";
     position: absolute;
-    border: 2px solid #e9e9e9;
+    border: .2rem solid #e9e9e9;
     left: 1%;
     right: 1%;
     bottom: 1%;
@@ -701,19 +742,19 @@ img {
 
 .servicesTop {
     display: flex;
-    gap: 15px;
+    gap: 1.5rem;
 }
 
 .servicesBottom {
     display: flex;
-    gap: 15px;
-    padding-top: 15px;
+    gap: 1.5rem;
+    padding-top: 1.5rem;
 }
 
 .servicesbanner {
     position: relative;
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 1.5rem;
 }
 
 .servicesbanner h4 {
@@ -721,7 +762,7 @@ img {
 }
 
 .servicesbanner h4 a {
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: 800;
     color: #000;
     font-family: 'Ubuntu', sans-serif;
@@ -736,32 +777,32 @@ img {
 }
 
 .servicebuttonsize {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #0973ba;
 }
 
 /* OUR TOP PRODUCTS */
 .our-top-products {
-    padding: 50px 0 90px;
+    padding: 5rem 0 9rem;
     position: relative;
 }
 
 .line1top {
-    border-top: 2px solid #ed2328;
-    margin-right: 832px;
-    margin-left: 550px;
+    border-top: .2rem solid #ed2328;
+    margin-right: 83.2rem;
+    margin-left: 55rem;
     position: relative;
     color: rgb(237, 35, 40);
-    top: 15px;
+    top: 1.5rem;
 }
 
 .line2bottom {
-    border-top: 2px solid #ed2328;
-    margin-right: 550px;
-    margin-left: 832px;
+    border-top: .2rem solid #ed2328;
+    margin-right: 55rem;
+    margin-left: 83.2rem;
     position: relative;
     color: rgb(237, 35, 40);
-    bottom: 13px;
+    bottom: 1.3rem;
 }
 
 
@@ -769,9 +810,9 @@ img {
 .brands {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 2rem;
     align-items: center;
-    gap: 18px;
+    gap: 1.8rem;
 }
 
 .optifast-brand img,
@@ -780,7 +821,8 @@ img {
 .omron-brand img,
 .musashi-brand img,
 .depend-brand img {
-    border: 1px solid rgb(235, 235, 235);
+    border: .1rem solid rgb(235, 235, 235);
+    transition: all 0.5s;
 
 }
 
@@ -796,9 +838,9 @@ img {
 
 /* WELCOME SECTION */
 .welcomesection {
-    padding-top: 70px;
+    padding-top: 7rem;
     display: flex;
-    gap: 35px;
+    gap: 3.5rem;
     align-items: center;
 }
 
@@ -815,8 +857,7 @@ img {
 }
 
 .welcometext h3 {
-    /* padding-top: 60px; */
-    font-size: 30px;
+    font-size: 3rem;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 800;
 }
@@ -827,41 +868,43 @@ img {
 }
 
 .welcometext p:nth-child(2) {
-    padding-top: 25px;
-    font-size: 18px;
+    padding-top: 2.5rem;
+    font-size: 1.8rem;
     font-family: 'Ubuntu', sans-serif;
-    line-height: 25px;
+    line-height: 2.5rem;
 }
 
 .welcometext p:nth-child(3),
 .welcometext p:nth-child(4),
 .welcometext p:nth-child(5) {
-    font-size: 16px;
-    padding: 7px 0;
+    font-size: 1.6rem;
+    padding: .7rem 0;
     color: #666666;
     font-family: 'Roboto', sans-serif;
-    line-height: 24px;
+    line-height: 2.4rem;
 }
 
 .welcometext p:nth-child(5) {
-    padding-bottom: 25px;
+    padding-bottom: 2.5rem;
 }
 
 .welcometext a {
-    padding: 10px 17px;
+    padding: 1rem 1.7rem;
     color: rgb(14, 102, 161);
-    border: 1px solid rgb(14, 102, 161);
-    border-radius: 2px;
+    border: .1rem solid rgb(14, 102, 161);
+    border-radius: .2rem;
     font-weight: 700;
     background-color: #fff;
     cursor: pointer;
     text-decoration: none;
+    font-size: 1.5rem;
+    transition: all 0.5s;
 }
 
 .welcometext a:hover {
     background-color: rgb(14, 102, 161);
     color: #fff;
-    transition: all 0.5s;
+    border-radius: .5rem;
 }
 
 /* CONTACT US */
@@ -869,11 +912,11 @@ img {
     background-color: #0973ba;
     width: 100%;
     display: inline-block;
-    padding: 33.5px 0;
+    padding: 3.35rem 0;
 }
 
 .footerCallImage {
-    padding-right: 10px;
+    padding-right: 1rem;
 }
 
 .contactDetail {
@@ -883,13 +926,13 @@ img {
 
 .footerContactDetails p {
     color: #fff;
-    font-size: 13px;
+    font-size: 1.3rem;
 }
 
 .footerContactDetails span a {
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .footer-section {
@@ -908,13 +951,12 @@ img {
 }
 
 .footer-contact_detail_section img {
-    padding-right: 10px;
+    padding-right: 1rem;
 }
 
 .footer-contact_detail_section p span a {
-    font-size: 23px;
+    font-size: 2.3rem;
     font-family: 'Ubuntu', sans-serif;
-    /* padding-right: 1.875em; */
     text-decoration: none;
     color: #fff;
     font-weight: 600;
@@ -922,7 +964,7 @@ img {
 
 .footer-contact_detail_section p {
     color: #fff;
-    font-size: 14px;
+    font-size: 1.4rem;
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -934,39 +976,39 @@ img {
 
 .footerButton a {
     text-decoration: none;
-    padding: 6px 12px;
+    padding: .6rem 1.2rem;
     background: rgb(255, 255, 255);
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #0E66A1;
     font-family: Ubuntu, sans-serif;
-    border: 1px solid #0E66A1;
+    border: .1rem solid #0E66A1;
 }
 
 .footerButton a:hover {
     opacity: 0.7;
 }
 
-.locationsection {
-    margin-left: -150px;
-}
+/* .locationsection {
+    margin-left: -15rem;
+} */
 
 .mapsimage {
-    padding-top: 1px;
+    padding-top: .1rem;
     max-width: 100%;
 }
 
 
 /* NEWSLETTER */
 .newsletter {
-    padding: 30px 0 0 0;
+    padding: 3rem 0 0 0;
 }
 
 .newsletterSection {
     background-color: #0973ba;
     width: 100%;
     display: flex;
-    padding: 21.5px 0;
+    padding: 2.15rem 1rem;
     align-items: center;
     justify-content: space-around;
 }
@@ -974,22 +1016,28 @@ img {
 .newsletterSection input[type=text],
 .newsletterSection input[type=email],
 input[type=submit] {
-    padding: 12px 100px 12px 12px;
-    margin: 8px 0;
+    padding: 1.2rem 10rem 1.2rem 1.2rem;
+    margin: .8rem .2rem;
     font-style: italic;
     display: inline-block;
-    border: 1px solid #ccc;
+    color: #8f8f8f;
+    border: .1rem solid #ccc;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: .4rem;
+    font-size: 1.6rem;
+}
+
+.newsletterSection input[type=email] {
+    padding: 1.2rem 23rem 1.2rem 1.2rem;
 }
 
 .newsletterSection .newsletterButton {
     background-color: #ed2328;
     color: #fff;
-    font-size: 18px;
-    padding: 11px 64px;
+    font-size: 1.6rem;
+    padding: 1.3rem 6.4rem;
     border: none;
-    border-radius: 4px;
+    border-radius: .4rem;
     font-family: sans-serif;
     font-style: normal;
 }
@@ -1000,12 +1048,12 @@ input[type=submit] {
 
 .newsletterSection .footer-contact_detail_section p:nth-child(1) {
     font-weight: 800;
-    font-size: 22px;
+    font-size: 2.2rem;
 }
 
 .newsletterSection .footer-contact_detail_section p:nth-child(2) {
     color: #97c9ea;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 100;
 }
 
@@ -1013,26 +1061,23 @@ input[type=submit] {
 .footermiddle {
     display: flex;
     justify-content: space-around;
-    border: 1px solid #87878736;
+    border: .1rem solid #87878736;
 }
 
 .quicklinkssection {
-    line-height: 30px;
+    line-height: 3rem;
     color: rgb(112, 112, 112);
-    padding: 15px;
+    padding: 1.5rem;
     position: relative;
-    /* padding: 15px 59px;
-    border: 1px solid #87878736;
-    border-right: 0; */
 }
 
 .quicklinkssection:after {
     content: " ";
     position: absolute;
-    border: 1px solid #8787871f;
+    border: .1rem solid #8787871f;
     top: 0%;
     bottom: 0%;
-    left: 111%;
+    left: 23rem;
 }
 
 .quicklinkssection:last-child::after {
@@ -1044,34 +1089,38 @@ input[type=submit] {
 .quicklinks h3 {
     font-family: 'Ubuntu', sans-serif;
     color: #0973ba;
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .quicklinksTop {
     font-family: 'Ubuntu', sans-serif;
     color: #0973ba;
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
+    font-size: 1.6rem;
 }
 
 .quicklinksTop ul li a {
-    font-size: 15px;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
 }
 
 .footerbottom {
-    padding: 20px 0;
+    padding: 2rem 0;
     text-align: center;
+    font-size: 1.6rem;
     color: rgb(131, 137, 142);
     font-family: 'Roboto', sans-serif;
 }
 
 .quicklinkssection ul {
-    padding-left: 15px;
+    padding-left: 1.5rem;
 }
 
 .quicklinkssection ul li a {
     text-decoration: none;
     color: rgb(131, 137, 142);
+    font-size: 1.5rem;
 }
 
 .quicklinkssection ul li a:hover {
@@ -1084,7 +1133,7 @@ input[type=submit] {
     color: #ed2328;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 .quicklinkssection .quicklinksBottom a:hover {
@@ -1093,7 +1142,7 @@ input[type=submit] {
 
 .socialmedia ul li {
     display: inline-block;
-    padding: 2px 4px;
+    padding: .2rem .4rem;
 }
 
 .socialmedia ul {
@@ -1102,12 +1151,12 @@ input[type=submit] {
 
 .socialmedia ul li img:hover {
     background: #cfebff;
-    border-radius: 20px;
+    border-radius: 2rem;
 }
 
 .paymentmethods ul li {
     display: inline;
-    padding-right: 5px;
+    padding-right: 0.5rem;
 }
 
 .paymentmethods ul {
@@ -1115,9 +1164,9 @@ input[type=submit] {
 }
 
 .paymentmethods p {
-    font-size: 20px;
+    font-size: 2rem;
     font-family: 'Ubuntu', sans-serif;
-    padding: 30px 0 10px 0;
+    padding: 3rem 0 1rem 0;
 }
 
 .paymentmethods p span {
@@ -1126,13 +1175,13 @@ input[type=submit] {
 
 .footertrustlogos ul li {
     display: inline;
-    padding-right: 30px;
+    padding-right: 3rem;
 }
 
 .footertrustlogos ul {
     align-items: center;
     display: flex;
-    padding: 12px 0;
+    padding: 1.2rem 0;
 }
 
 
@@ -1157,29 +1206,29 @@ input[type=submit] {
 }
 
 .top-heading {
-    padding-top: 96px;
-    font-size: 30px;
+    padding-top: 9.6rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
 .sub-heading {
-    font-size: 70px;
+    font-size: 7rem;
     font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
 .paragraph {
-    font-size: 14.5px;
-    line-height: 1.8em;
+    font-size: 1.45rem;
+    line-height: 2.88rem;
 }
 
 
 .button1 {
-    padding: 20px 50px;
+    padding: 2rem 5rem;
     font-weight: bold;
-    border-radius: 10px;
-    margin-right: 10px;
+    border-radius: 1rem;
+    margin-right: 1rem;
     background-color: white;
     border: solid;
     border-color: #fff;
@@ -1190,15 +1239,15 @@ input[type=submit] {
 .button1:hover {
     border-color: rgb(254, 210, 0);
     background-color: rgb(254, 210, 0);
-    box-shadow: 5px 5px 10px 1px rgb(161, 157, 157);
+    box-shadow: .5rem .5rem 1rem .1rem rgb(161, 157, 157);
     transition: all 0.5s;
     color: #fff;
 }
 
 .button2 {
-    padding: 20px;
+    padding: 2rem;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 1rem;
     background-color: #fed200;
     color: white;
     border: solid;
@@ -1211,7 +1260,7 @@ input[type=submit] {
     background-color: #fff;
     border-color: #fff;
     color: #000;
-    box-shadow: 5px 5px 10px 1px rgb(254, 210, 0);
+    box-shadow: .5rem .5rem 1rem .1rem rgb(254, 210, 0);
     transition: all 0.5s;
 }
 
@@ -1219,32 +1268,32 @@ input[type=submit] {
 .sleek-columnright {
     float: left;
     width: 40%;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
 }
 
 .top-heading-slider {
-    font-size: 3.75vw;
+    font-size: 7.2rem;
     font-weight: 800;
     color: #fff;
     font-family: 'Ubuntu', sans-serif;
-    padding-bottom: 25px;
+    padding-bottom: 2.5rem;
 }
 
 .top-heading-slider2 {
-    font-size: 3.75vw;
+    font-size: 7.2rem;
     font-weight: 800;
     color: #0E66A1;
     font-family: 'Ubuntu', sans-serif;
-    padding-bottom: 25px;
+    padding-bottom: 2.5rem;
 }
 
 .top-heading-slider3 {
-    font-size: 3.75vw;
+    font-size: 7.2rem;
     font-weight: 800;
     color: #fff;
     font-family: 'Ubuntu', sans-serif;
-    padding-bottom: 25px;
+    padding-bottom: 2.5rem;
 }
 
 .Slidertext {
@@ -1253,30 +1302,60 @@ input[type=submit] {
     transform: translate(0, -50%);
 }
 
+.slick-slide {
+    height: auto;
+}
+
+/* RESPONSIVENESS */
 @media screen and (max-width: 1440px) {
     .container {
-        padding: 0px 40px;
+        padding: 0px 4rem;
     }
 
-    .header-search .fa-search {
-        padding: 0.3927vw;
+    html {
+        font-size: 60%;
     }
 }
 
 @media screen and (max-width: 1366px) {
-    .uspText {
-        font-size: 16px;
+
+    .column-usp img {
+        max-width: 16%;
     }
 
-    .column-usp img,
-    .header-call img {
-        max-width: 50%;
+    .header-call img,
+    .header-account img,
+    .header-cart img,
+    .footer-contact_detail_section img {
+        max-width: 22%;
+    }
+
+    .logo {
+        max-width: 30%;
+    }
+
+    html {
+        font-size: 55%;
+    }
+
+    .cart_number {
+        right: 9.25rem;
+        bottom: 2.4rem;
     }
 }
 
 @media screen and (max-width: 1280px) {
-    .logo {
-        max-width: 30%;
+    html {
+        font-size: 47%;
+    }
+
+    .cart_number {
+        right: 10.5rem;
+        bottom: 2.8rem;
+    }
+
+    .brands {
+        text-align: -webkit-center;
     }
 }
 
@@ -1285,22 +1364,433 @@ input[type=submit] {
     .logo {
         max-width: 25%;
     }
+
+    html {
+        font-size: 45%;
+    }
 }
 
 @media screen and (max-width: 1024px) {
-    .header-call p span a {
-        font-size: 2.041667vw;
+    .container {
+        padding: 0 35px;
     }
 
-    .header-call p {
-        font-size: 12px;
+    html {
+        font-size: 40%;
+    }
+
+    .socialmedia ul li a img,
+    .footertrustlogos ul li img,
+    .paymentmethods ul li img {
+        max-width: 85%;
+    }
+
+    .socialmedia ul li {
+        padding: 0;
+    }
+
+    .column-usp img,
+    img#auslogo,
+    .header-account img {
+        max-width: 14%;
+    }
+
+    .header-call img,
+    .header-cart img {
+        max-width: 22%;
+    }
+
+    .currency {
+        top: 2.8rem;
+    }
+
+    .cart_number {
+        right: 11.5rem;
+        bottom: 3rem;
     }
 
     .header-search input[type=text] {
-        padding: 0.677vw 8.96875vw 0.677vw 0.5208vw;
+        padding: 1.2rem 23rem 1.2rem 1rem;
+    }
+
+    .header-search .fa-search {
+        padding: 0.8rem
+    }
+
+    .quicklinkssection:after {
+        left: 20rem;
+    }
+
+    .footertrustlogos ul li {
+        padding-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .header-call img,
+    .header-cart img,
+    .cardhover img {
+        max-width: 20%;
+    }
+
+    .cart_number {
+        right: 13.25rem;
+    }
+
+    html {
+        font-size: 35%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    .site-nav-menu {
+        float: none;
+        position: absolute;
+        background: rgb(235 229 132);
+        width: 100%;
+        left: 0;
+        top: 70px;
+        padding: 0px 0px 700px 0px;
+        border-top: 1px solid #4a4848;
+        clip-path: circle(0% at 100% 0%);
+        transition: all 0.5s;
+        z-index: 1;
+    }
+
+    .primary-menu {
+        display: grid;
+        text-align: center;
+        margin: 5px;
+        justify-items: center;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .mobile-menu {
+        clip-path: circle(87% at 50% -35%);
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 2.2rem 6.6rem;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content ul li a {
+        font-size: 3.5rem;
+    }
+
+    .primary-menu:after {
+        display: none;
+    }
+
+    .header-search .fa-search {
+        padding: 1.4rem;
+        font-size: 5.5rem;
+        margin: 1rem;
+    }
+
+    .header-call p span a {
+        font-size: 5.2rem;
+    }
+
+    .header-call p {
+        font-size: 3rem;
+    }
+
+    .header-cart img {
+        max-width: 22%;
+    }
+
+    #currencyselector {
+        bottom: 4rem;
+        font-size: 3rem;
+    }
+
+    .currency {
+        left: 13.4rem;
+        top: 3.8rem;
+        font-size: 3.6rem;
+    }
+
+    .dropbtn {
+        font-size: 4rem;
+        padding: 2.5rem 1rem 2.5rem 1rem;
+        background: rgb(235 229 132);
+    }
+
+
+
+    .headertop {
+        z-index: 1;
+    }
+
+    .navbar-copy ul li a {
+        font-size: 3rem;
+    }
+
+    .dropbtnShopAll {
+        font-size: 3rem;
+    }
+
+    .navbar-copy ul {
+        padding: 1rem 0;
+    }
+
+    html {
+        font-size: 30%;
+    }
+
+    .header-search button {
+        top: 0
+    }
+
+    .header-cart {
+        padding: 0;
+    }
+
+    .socialmedia ul li a img,
+    .footertrustlogos ul li img {
+        max-width: 65%;
+    }
+
+    .header-search input[type=text] {
+        padding: 3.2rem 55rem 3.2rem 3.2rem;
+        font-size: 3.4rem;
+    }
+
+    .header-search,
+    .header-call,
+    .header-account {
+        padding: 2rem 0;
+        border: none;
     }
 
     .header-call img {
-        max-width: 24%;
+        max-width: 18%;
     }
+
+    .cart_number {
+        right: 16rem;
+        bottom: 5.2rem;
+        font-size: 2.3rem;
+    }
+
+    img#auslogo {
+        max-width: 15%;
+        bottom: 4rem;
+    }
+
+    .paymentmethods ul li img {
+        width: 15%;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .categories {
+        display: block;
+        transition: all 0.8s;
+        text-align: center;
+        padding: 0 5rem;
+    }
+
+    .categories .icon-arrow-right-circle {
+        font-size: 2rem;
+    }
+
+    .slick-carousel .slick-slide img {
+        display: block;
+        height: 300px;
+    }
+
+    .slick-track {
+        height: auto;
+    }
+
+
+    .categories a {
+        font-size: 2.3rem;
+    }
+
+    .bannerSubheading {
+        font-size: 2.2rem;
+    }
+
+    .bannerHeading {
+        font-size: 3.8rem;
+    }
+
+    .uspText {
+        font-size: 3rem;
+        padding-right: 3rem;
+    }
+
+    .carditems {
+        text-align: -webkit-center;
+    }
+
+    .productcard {
+        display: block;
+    }
+
+    .product_section ul li:first-child::before,
+    .product_section ul li:last-child:after {
+        width: 6rem;
+    }
+
+    .card {
+        max-width: 80rem;
+    }
+
+    .card .card-heading h5 {
+        font-size: 3.6rem;
+    }
+
+
+    .price {
+        font-size: 4.2rem;
+    }
+
+    .price-line2 {
+        padding: 0 4.5rem;
+        right: 10%;
+        bottom: 2rem;
+    }
+
+    .price span {
+        color: rgb(201, 201, 201);
+        font-size: 3.8rem;
+    }
+
+    .product_section p {
+        font-size: 5.8rem;
+    }
+
+    .logo {
+        max-width: 50%;
+        transition: all 0.5s;
+    }
+
+    .slick-slide {
+        height: auto;
+    }
+
+    .currency {
+        left: 6.4rem;
+        top: 2.8rem;
+        font-size: 3.6rem;
+    }
+
+}
+
+
+@media screen and (max-width: 640px) {
+    html {
+        font-size: 25%;
+    }
+
+    .cart_number {
+        right: 18.5rem;
+        bottom: 5.8rem;
+        font-size: 2.3rem;
+    }
+
+    .site-nav-menu {
+        top: 58px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {}
+
+
+@media screen and (max-width: 425px) {
+    html {
+        font-size: 20%;
+    }
+
+    .category-left {
+        display: inline-block;
+    }
+
+    .category-right {
+        display: inline-block;
+    }
+
+    .categories a {
+        font-size: 4rem;
+    }
+
+    .bannerSubheading {
+        font-size: 4rem;
+    }
+
+    .bannerHeading {
+        font-size: 7rem;
+    }
+
+    .header-cart img {
+        max-width: 18%;
+    }
+
+    .header-search input[type=text] {
+        padding: 3.2rem 50rem 3.2rem 3.2rem;
+        font-size: 3.4rem;
+    }
+
+    #carticon {
+        position: relative;
+        top: 1.5rem;
+        left: 4rem;
+    }
+
+    #currencyselector {
+        left: 4rem;
+    }
+
+    img#auslogo {
+        bottom: 3.75rem;
+        left: 4.5rem;
+    }
+
+    .dropdown-content ul li a {
+        font-size: 4.5rem;
+    }
+
+    .site-nav-menu {
+        top: 46px;
+    }
+
+    .currency {
+        left: 10.4rem;
+        top: 4.5rem;
+    }
+
+    .cart_number {
+        right: 19rem;
+        bottom: 4.5rem;
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        max-width: 57%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .mobile-menu {
+        clip-path: circle(85% at 50% -35%);
+    }
+
+
+
 }
