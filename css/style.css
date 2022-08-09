@@ -542,29 +542,27 @@ section#hero-section {
     cursor: pointer;
 }
 
-.product_section ul button:first-child {
+/* .product_section ul button:first-child {
     color: #0973BA;
 }
 
 .product_section ul button:hover {
     color: #0973BA;
-}
+} */
 
-.product_section ul button:first-child::before {
+.product_section ul::before {
     content: " ";
     border: .1rem solid #ed2328;
     width: 10rem;
-    margin: 0 1rem;
     display: inline-block;
     position: relative;
     bottom: .5rem;
 }
 
-.product_section ul button:last-child:after {
+.product_section ul::after {
     content: " ";
     border: .1rem solid #ed2328;
     width: 10rem;
-    margin: 0 1rem;
     display: inline-block;
     position: relative;
     bottom: .5rem;
@@ -2512,4 +2510,12 @@ input[type=submit] {
     .mobile-menu {
         clip-path: circle(85% at 50% -35%);
     }
+}
+
+.tablink {
+    color: #0973BA;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: none;
 }

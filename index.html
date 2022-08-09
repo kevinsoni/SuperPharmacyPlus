@@ -269,19 +269,21 @@
         <div class="product_section">
             <div class="container">
                 <ul>
-                    <button class="w3-bar-item w3-button" onclick="openCity('featured')">Featured</button>
+                    <button class="tablink" onclick="openPage('featured', this, '#0973BA')">Featured</button>
                     <li><a href="#"><span style="color:rgb(201, 201, 201);">/</span></a></li>
-                    <button class="w3-bar-item w3-button" onclick="openCity('new_arrivals')">New Arrivals</button>
+                    <button class="tablink" onclick="openPage('new_arrivals', this, '#0973BA')" id="defaultOpen">New
+                        Arrivals</button>
                     <li><a href="#"><span style="color:rgb(201, 201, 201);">/</span></a></li>
-                    <button class="w3-bar-item w3-button" onclick="openCity('clearance')">Clearance Items</button>
+                    <button class="tablink" onclick="openPage('clearance', this, '#0973BA')">Clearance
+                        Items</button>
                 </ul>
                 <p>Our Top Products</p>
             </div>
         </div>
         <div class="productcardSection">
             <div class="container">
-                <div class="productcard ">
-                    <div class="carditems allcards" id="featured">
+                <div class="productcard tabcontent" id="new_arrivals">
+                    <div class=" carditems">
                         <div class="card">
                             <div class="cardimage1">
                                 <img src="./images/product-card/product1.png" alt="Denim Jeans">
@@ -302,7 +304,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carditems allcards" id="new_arrivals">
+                    <div class="carditems">
                         <div class="card">
                             <div class="cardimage2">
                                 <img src="./images/product-card/product2.png" alt="Denim Jeans">
@@ -321,7 +323,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carditems allcards">
+                    <div class="carditems">
                         <div class="card">
                             <div class="cardimage3">
                                 <img src="./images/product-card/product3.jpg" alt="Denim Jeans">
@@ -340,8 +342,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carditems allcards" id="clearance">
-                        <div class="card">
+                    <div class="carditems">
+                        <div class=" card">
                             <div class="cardimage4">
                                 <img src="./images/product-card/product4.jpg" alt="Denim Jeans">
                                 <div class="cardhover">
@@ -361,7 +363,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carditems allcards">
+                    <div class="carditems">
                         <div class="card">
                             <div class="cardimage5">
                                 <img src="./images/product-card/product5.jpg" alt="Denim Jeans">
@@ -377,6 +379,69 @@
                                     <h5>BioGaia Probiotic Drops 5mL</h5><br>
                                 </div>
                                 <div class="price">$395.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="productcard tabcontent" id="featured">
+                    <div class="carditems">
+                        <div class="card">
+                            <div class="cardimage1">
+                                <img src="./images/product-card/product1.png" alt="Denim Jeans">
+                                <div class="cardhover">
+                                    <img src="./images/zoombutton.png" alt="zoombutton">
+                                    <button type="button" class="cardbutton"
+                                        onclick="alert('Your Product has been Successfully Added to Cart')">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                            <div class="cardDescription">
+                                <div class="card-heading">
+                                    <h5>M+D Crutch | Innovative Forearm Crutch | Black</h5>
+                                </div>
+                                <div class="price">$19.99<span>
+                                        <div class="price-line1"></div> $999.99
+                                    </span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carditems">
+                        <div class="card">
+                            <div class="cardimage2">
+                                <img src="./images/product-card/product2.png" alt="Denim Jeans">
+                                <div class="cardhover">
+                                    <img src="./images/zoombutton.png" alt="zoombutton">
+                                    <button type="button" class="cardbutton"
+                                        onclick="alert('Your Product has been Successfully Added to Cart')">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                            <div class="cardDescription">
+                                <div class="card-heading">
+                                    <h5>Actimove Standard Walker | Lower Leg High-Rise Moon Boot</h5>
+                                </div>
+                                <div class="price">$559.95</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="productcard tabcontent" id="clearance">
+                    <div class="carditems">
+                        <div class="card">
+                            <div class="cardimage2">
+                                <img src="./images/product-card/product2.png" alt="Denim Jeans">
+                                <div class="cardhover">
+                                    <img src="./images/zoombutton.png" alt="zoombutton">
+                                    <button type="button" class="cardbutton"
+                                        onclick="alert('Your Product has been Successfully Added to Cart')">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                            <div class="cardDescription">
+                                <div class="card-heading">
+                                    <h5>Actimove Standard Walker | Lower Leg High-Rise Moon Boot</h5>
+                                </div>
+                                <div class="price">$559.95</div>
                             </div>
                         </div>
                     </div>
@@ -658,15 +723,5 @@
 <script src='./js/jquery-min.js'></script>
 <script src='./js/slick-min.js'></script>
 <script src="./js/script.js"></script>
-<script>
-    function openCity(cityName) {
-        var i;
-        var x = document.getElementsByClassName("allcards");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        document.getElementById(cityName).style.display = "block";
-    }
-</script>
 
 </html>
