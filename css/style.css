@@ -7,10 +7,14 @@
     src: url(MYRIADPRO-REGULAR.otf);
 }
 
+:root {
+    --blue-color: #;
+}
+
 html {
     font-size: 62.5%;
     transition: all 0.5s;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 
 * {
@@ -33,7 +37,7 @@ img {
 
 
 .headertop {
-    background-color: rgb(251, 242, 82);
+    background-color: #FBF252;
     padding: 1rem 0;
 }
 
@@ -67,7 +71,7 @@ img {
 section#hero-section {
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background-color: #000;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -79,10 +83,6 @@ section#hero-section {
 
 /* Responsive css */
 
-
-
-
-
 .header-search form {
     position: relative;
 }
@@ -90,7 +90,7 @@ section#hero-section {
 .header-search .fa-search {
     padding: .85rem;
     border-radius: .3rem;
-    background: rgb(9, 115, 186);
+    background: #0973BA;
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -109,20 +109,18 @@ section#hero-section {
     font-size: 1.4rem;
     border: none;
     border-radius: .3rem;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     transition: all 0.5s;
 }
 
 .header-search input:hover {
-    box-shadow: .2rem .2rem 1rem 0rem rgb(0, 0, 0);
+    box-shadow: .2rem .2rem 1rem 0rem #000;
 }
 
 .header-call {
     display: flex;
     align-items: center;
-    border-right-style: solid;
-    border-color: #fff;
-    border-width: .2rem;
+    border-right: 2px solid #fff;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
     padding: 0 1.5rem;
@@ -139,7 +137,7 @@ section#hero-section {
 }
 
 .header-call p span a {
-    color: rgb(9, 115, 186);
+    color: #0973BA;
     font-size: 2.2rem;
     font-weight: bold;
     text-decoration: none;
@@ -193,7 +191,7 @@ section#hero-section {
     font-size: 1.6rem;
     border: none;
     padding: 1.5rem 1rem 1rem 1rem;
-    background-color: rgb(251, 242, 82);
+    background-color: #FBF252;
 }
 
 .dropdown {
@@ -209,7 +207,7 @@ section#hero-section {
     display: none;
     position: absolute;
     min-width: 12rem;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     box-shadow: rgb(14 102 161) 1rem 2rem 3rem 0rem;
     z-index: 1;
 }
@@ -253,9 +251,8 @@ section#hero-section {
 .dropdown-contentShopAll {
     display: none;
     position: absolute;
-    background-color: rgb(237, 35, 40);
+    background-color: #ED2328;
     min-width: 14rem;
-    /* box-shadow: rgb(254 210 0) 1rem 1rem 3rem 0rem; */
     z-index: 1;
 }
 
@@ -269,7 +266,6 @@ section#hero-section {
 .dropdown-contentShopAll a:hover {
     background-color: #ffffff;
     color: #000;
-    /* box-shadow: rgb(254 210 0 / 88%) 0rem 0rem 1rem 0rem; */
 }
 
 .dropdownShopAll:hover .dropdown-contentShopAll {
@@ -285,11 +281,11 @@ section#hero-section {
 
 .cart_number {
     position: absolute;
-    color: rgb(255, 255, 255);
+    color: #FFF;
     bottom: 2.5rem;
     right: 7.8rem;
     font-size: 1.3rem;
-    background: rgb(237, 35, 40);
+    background: #ED2328;
     border-radius: 1.0rem;
 }
 
@@ -382,7 +378,7 @@ section#hero-section {
 .banner-subheading2 {
     font-size: 2.4rem;
     font-weight: 200;
-    color: rgb(0, 0, 0);
+    color: #000;
     font-family: 'Ubuntu', sans-serif;
     padding-bottom: 4.5rem;
 }
@@ -391,7 +387,7 @@ section#hero-section {
     color: #fff;
     font-size: 2.0rem;
     padding: 1rem 1.8rem;
-    background-color: rgb(237, 35, 40);
+    background-color: #ED2328;
     font-family: 'Ubuntu', sans-serif;
     box-shadow: 0.2rem 0.3rem 1.2rem #000;
     text-decoration: none;
@@ -456,13 +452,25 @@ section#hero-section {
     text-align: right;
 }
 
-.bannerHeading {
+.bannerTextAtEnd h4 {
     font-size: 2.2rem;
     font-weight: 800;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.bannerSubheading {
+.bannerTextAtStart h4 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.bannerTextAtEnd p {
+    font-size: 1.4rem;
+    padding: .5rem 0 1.5rem 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.bannerTextAtStart p {
     font-size: 1.4rem;
     padding: .5rem 0 1.5rem 0;
     font-family: 'Ubuntu', sans-serif;
@@ -483,7 +491,7 @@ section#hero-section {
 
 .categories .icon-arrow-right-circle {
     font-size: 1.1rem;
-    color: rgb(237, 35, 40);
+    color: #ED2328;
     font-weight: 900;
 }
 
@@ -505,13 +513,13 @@ section#hero-section {
     font-size: 2.4rem;
     padding: .1rem;
     position: absolute;
-    color: rgb(201, 201, 201);
+    color: #C9C9C9;
     background-color: #fff;
 }
 
 .product_section ul li a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #000;
     font-size: 1.8rem;
     font-weight: 600;
     padding: 0 1rem;
@@ -520,19 +528,43 @@ section#hero-section {
     background-color: #fff;
 }
 
-.product_section ul li:first-child::before {
+.product_section ul button {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 0 1rem;
+    font-size: 2.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.product_section ul button:first-child {
+    color: #0973BA;
+}
+
+.product_section ul button:hover {
+    color: #0973BA;
+}
+
+.product_section ul button:first-child::before {
     content: " ";
     border: .1rem solid #ed2328;
     width: 10rem;
+    margin: 0 1rem;
     display: inline-block;
     position: relative;
     bottom: .5rem;
 }
 
-.product_section ul li:last-child:after {
+.product_section ul button:last-child:after {
     content: " ";
     border: .1rem solid #ed2328;
     width: 10rem;
+    margin: 0 1rem;
     display: inline-block;
     position: relative;
     bottom: .5rem;
@@ -547,14 +579,14 @@ section#hero-section {
     text-align: center;
     padding: 1.5rem 0;
     font-family: 'RageItalic';
-    color: rgb(201, 201, 201);
+    color: #C9C9C9;
 }
 
 .product_section .line {
     border-top: .2rem solid #ed2328;
     margin: 0 58rem;
     position: relative;
-    color: rgb(237, 35, 40);
+    color: #ED2328;
     top: 1.5rem;
     z-index: -1;
 }
@@ -605,7 +637,7 @@ section#hero-section {
 }
 
 .price span {
-    color: rgb(201, 201, 201);
+    color: #C9C9C9;
     font-size: 1.8rem;
     font-weight: 200;
     padding-left: .5rem;
@@ -693,7 +725,7 @@ section#hero-section {
 
 /* INSTORE-SERVICES */
 .instore-services {
-    background-color: rgb(249, 249, 249);
+    background-color: #F9F9F9;
     padding: 5rem 0 6rem 0;
 }
 
@@ -807,7 +839,7 @@ section#hero-section {
     margin-right: 83.2rem;
     margin-left: 55rem;
     position: relative;
-    color: rgb(237, 35, 40);
+    color: #ED2328;
     top: 1.5rem;
 }
 
@@ -816,7 +848,7 @@ section#hero-section {
     margin-right: 55rem;
     margin-left: 83.2rem;
     position: relative;
-    color: rgb(237, 35, 40);
+    color: #ED2328;
     bottom: 1.3rem;
 }
 
@@ -830,13 +862,32 @@ section#hero-section {
     gap: 1.8rem;
 }
 
+.optifast-brand a,
+.amcal-brand a,
+.avent-brand a,
+.omron-brand a,
+.musashi-brand a,
+.depend-brand a {
+    border: 1px solid #ebebeb;
+    display: flex;
+}
+
 .optifast-brand img,
 .amcal-brand img,
 .avent-brand img,
 .omron-brand img,
 .musashi-brand img,
 .depend-brand img {
-    border: 1px solid rgb(235, 235, 235);
+    border: 1px solid #fff;
+}
+
+.optifast-brand a:hover,
+.amcal-brand a:hover,
+.avent-brand a:hover,
+.omron-brand a:hover,
+.musashi-brand a:hover,
+.depend-brand a:hover {
+    border: 1px solid #0973ba;
 }
 
 .optifast-brand img:hover,
@@ -845,7 +896,7 @@ section#hero-section {
 .omron-brand img:hover,
 .musashi-brand img:hover,
 .depend-brand img:hover {
-    border: 2px solid #0973ba;
+    border: 1px solid #0973ba;
 }
 
 
@@ -877,7 +928,7 @@ section#hero-section {
 
 .welcometext h3 span {
     font-weight: 100;
-    color: rgb(75, 152, 204);
+    color: #4B98CC;
 }
 
 .welcometext p:nth-child(2) {
@@ -903,8 +954,8 @@ section#hero-section {
 
 .welcometext a {
     padding: 1rem 1.7rem;
-    color: rgb(14, 102, 161);
-    border: .1rem solid rgb(14, 102, 161);
+    color: #0E66A1;
+    border: .1rem solid #0E66A1;
     border-radius: .2rem;
     font-weight: 700;
     background-color: #fff;
@@ -915,7 +966,7 @@ section#hero-section {
 }
 
 .welcometext a:hover {
-    background-color: rgb(14, 102, 161);
+    background-color: #0E66A1;
     color: #fff;
     border-radius: .5rem;
 }
@@ -956,6 +1007,7 @@ section#hero-section {
 .newsletterSection .footer-contact_detail_section {
     display: block;
     align-items: center;
+    width: 35%;
 }
 
 .footer-section .footer-contact_detail_section {
@@ -995,7 +1047,7 @@ section#hero-section {
 .footerButton a {
     text-decoration: none;
     padding: .6rem 1.2rem;
-    background: rgb(255, 255, 255);
+    background: #FFF;
     font-weight: 600;
     font-size: 1.8rem;
     color: #0E66A1;
@@ -1024,18 +1076,30 @@ section#hero-section {
 
 .newsletterSection {
     background-color: #0973ba;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     padding: 2.15rem 1rem;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.newsletterSection form {
+    display: contents;
+}
+
+.newsletterSection input[type=text] {
+    width: 18%;
+}
+
+.newsletterSection input[type=email] {
+    width: 25%;
 }
 
 .newsletterSection input[type=text],
 .newsletterSection input[type=email],
 input[type=submit] {
-    padding: 1.2rem 10rem 1.2rem 1.2rem;
-    margin: .8rem .2rem;
+    padding: 1.2rem 1rem;
+    margin: 0 .2rem;
     font-style: italic;
     display: inline-block;
     color: #8f8f8f;
@@ -1043,21 +1107,23 @@ input[type=submit] {
     box-sizing: border-box;
     border-radius: .4rem;
     font-size: 1.6rem;
+    outline: none;
 }
 
-.newsletterSection input[type=email] {
+/* .newsletterSection input[type=email] {
     padding: 1.2rem 23rem 1.2rem 1.2rem;
-}
+} */
 
 .newsletterSection .newsletterButton {
     background-color: #ed2328;
     color: #fff;
     font-size: 1.6rem;
-    padding: 1.3rem 6.4rem;
+    padding: 1.4rem 6rem;
     border: none;
     border-radius: .4rem;
     font-family: sans-serif;
     font-style: normal;
+    margin: 0 0.2rem;
 }
 
 .newsletterSection input[type=submit]:hover {
@@ -1084,7 +1150,7 @@ input[type=submit] {
 
 .quicklinkssection {
     line-height: 3rem;
-    color: rgb(112, 112, 112);
+    color: #707070;
     padding: 1.5rem;
     position: relative;
     width: 22%;
@@ -1126,7 +1192,7 @@ input[type=submit] {
     padding: 2rem 0;
     text-align: center;
     font-size: 1.6rem;
-    color: rgb(131, 137, 142);
+    color: #83898E;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -1136,7 +1202,7 @@ input[type=submit] {
 
 .quicklinkssection ul li a {
     text-decoration: none;
-    color: rgb(131, 137, 142);
+    color: #83898E;
     font-size: 1.5rem;
 }
 
@@ -1254,8 +1320,8 @@ input[type=submit] {
 }
 
 .button1:hover {
-    border-color: rgb(254, 210, 0);
-    background-color: rgb(254, 210, 0);
+    border-color: #FED200;
+    background-color: #FED200;
     box-shadow: .5rem .5rem 1rem .1rem rgb(161, 157, 157);
     transition: all 0.5s;
     color: #fff;
@@ -1277,7 +1343,7 @@ input[type=submit] {
     background-color: #fff;
     border-color: #fff;
     color: #000;
-    box-shadow: .5rem .5rem 1rem .1rem rgb(254, 210, 0);
+    box-shadow: .5rem .5rem 1rem .1rem #FED200;
     transition: all 0.5s;
 }
 
@@ -1705,14 +1771,14 @@ input[type=submit] {
     .omron-brand img,
     .musashi-brand img,
     .depend-brand img {
-        border: 0.7rem solid rgb(235, 235, 235);
+        border: 0.7rem solid #EBEBEB;
         transition: all 0.5s;
     }
 
     .site-nav-menu {
         float: none;
         position: absolute;
-        background: rgb(235 229 132);
+        background: #EBE584;
         width: 100%;
         left: 0;
         top: 70px;
@@ -1785,7 +1851,7 @@ input[type=submit] {
     .dropbtn {
         font-size: 4rem;
         padding: 2.5rem 1rem 2.5rem 1rem;
-        background: rgb(235 229 132);
+        background: #EBE584;
     }
 
     .slick-initialized .slick-slide {
@@ -1860,7 +1926,7 @@ input[type=submit] {
 
     .slick-carousel .fa-angle-right:before {
         content: "\f105";
-        background-color: rgb(251, 242, 82);
+        background-color: #FBF252;
         padding: 1rem 2.5rem;
         border-radius: 50px;
         border: 1px solid #000;
@@ -1869,7 +1935,7 @@ input[type=submit] {
     .slick-carousel .fa-angle-left:before {
         content: "\f104";
         border: 1px solid #000;
-        background-color: rgb(251, 242, 82);
+        background-color: #FBF252;
         padding: 1rem 2.5rem;
         border-radius: 50px;
     }
@@ -2007,7 +2073,7 @@ input[type=submit] {
     }
 
     .price span {
-        color: rgb(201, 201, 201);
+        color: #C9C9C9;
         font-size: 3.8rem;
     }
 
@@ -2186,7 +2252,7 @@ input[type=submit] {
 
     .fa-angle-right:before {
         content: "\f105";
-        background-color: rgb(251, 242, 82);
+        background-color: #FBF252;
         padding: 1rem 2.5rem;
         border-radius: 50px;
         border: 1px solid #000;
@@ -2195,7 +2261,7 @@ input[type=submit] {
     .fa-angle-left:before {
         content: "\f104";
         border: 1px solid #000;
-        background-color: rgb(251, 242, 82);
+        background-color: #FBF252;
         padding: 1rem 2.5rem;
         border-radius: 50px;
     }
@@ -2284,8 +2350,8 @@ input[type=submit] {
 
     .welcometext a {
         padding: 1rem 2.7rem;
-        color: rgb(14, 102, 161);
-        border: 0.1rem solid rgb(14, 102, 161);
+        color: #0E66A1;
+        border: 0.1rem solid #0E66A1;
         border-radius: 0.2rem;
         font-weight: 700;
         background-color: #fff;

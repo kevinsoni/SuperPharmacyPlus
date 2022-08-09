@@ -204,24 +204,16 @@
                         <div class="allcatogories">
                             <img src="./images/banner_1.png" alt="banner1">
                             <div class="bannerTextAtEnd">
-                                <div class="bannerHeading">
-                                    Equipment Hire
-                                </div>
-                                <div class="bannerSubheading">
-                                    Home Health Equipment
-                                </div>
+                                <h4>Equipment Hire</h4>
+                                <p>Home Health Equipment</p>
                                 <a href="#">Shop Now <i class="icon-arrow-right-circle"></i></a>
                             </div>
                         </div>
                         <div class="allcatogories">
                             <img src="./images/banner_2.png" alt="banner2">
                             <div class="bannerTextAtEnd">
-                                <div class="bannerHeading">
-                                    Baby
-                                </div>
-                                <div class="bannerSubheading">
-                                    Welcome to Parenthood
-                                </div>
+                                <h4>Baby</h4>
+                                <p>Welcome to Parenthood</p>
                                 <a href="#">Shop Now <i class="icon-arrow-right-circle"></i></a>
                             </div>
                         </div>
@@ -230,12 +222,8 @@
                         <div class="allcatogories">
                             <img src="./images/banner_3.png" alt="banner3">
                             <div class="bannerTextAtEnd">
-                                <div class="bannerHeading">
-                                    Diabetes Products
-                                </div>
-                                <div class="bannerSubheading">
-                                    Blood Glucose Monitor
-                                </div>
+                                <h4>Diabetes Products</h4>
+                                <p>Blood Glucose Monitor</p>
                                 <a href="#">Shop Now <i class="icon-arrow-right-circle"></i></a>
                             </div>
                         </div>
@@ -246,24 +234,16 @@
                         <div class="allcatogories">
                             <img src="./images/banner_4.png" alt="banner4">
                             <div class="bannerTextAtStart">
-                                <div class="bannerHeading">
-                                    Home Health
-                                </div>
-                                <div class="bannerSubheading">
-                                    Best Quality Home Health <br>Equipment
-                                </div>
+                                <h4>Home Health</h4>
+                                <p>Best Quality Home Health <br>Equipment</p>
                                 <a href="#">Shop Now <i class="icon-arrow-right-circle"></i></a>
                             </div>
                         </div>
                         <div class="allcatogories">
                             <img src="./images/banner_5.png" alt="banner5">
                             <div class="bannerTextAtStart">
-                                <div class="bannerHeading">
-                                    Sports
-                                </div>
-                                <div class="bannerSubheading">
-                                    Braces & Supports
-                                </div>
+                                <h4>Sports</h4>
+                                <p>Braces & Supports</p>
                                 <a href="#">Shop Now <i class="icon-arrow-right-circle"></i></a>
                             </div>
                         </div>
@@ -272,12 +252,8 @@
                         <div class="allcatogories">
                             <img src="./images/banner_6.png" alt="banner6">
                             <div class="bannerTextAtEnd">
-                                <div class="bannerHeading">
-                                    Vitamin Products
-                                </div>
-                                <div class="bannerSubheading">
-                                    Amplio
-                                </div>
+                                <h4>Vitamin Products</h4>
+                                <p>Amplio</p>
                                 <a href="#">Shop Now <i class="icon-arrow-right-circle"></i></a>
                             </div>
                         </div>
@@ -293,19 +269,19 @@
         <div class="product_section">
             <div class="container">
                 <ul>
-                    <li><a href="#"><span style="color:rgb(24, 124, 191);">Featured</span></a></li>
+                    <button class="w3-bar-item w3-button" onclick="openCity('featured')">Featured</button>
                     <li><a href="#"><span style="color:rgb(201, 201, 201);">/</span></a></li>
-                    <li><a href="#"><a href="#">New Arrivals</a></li>
+                    <button class="w3-bar-item w3-button" onclick="openCity('new_arrivals')">New Arrivals</button>
                     <li><a href="#"><span style="color:rgb(201, 201, 201);">/</span></a></li>
-                    <li><a href="#">Clearance Items</a></li>
+                    <button class="w3-bar-item w3-button" onclick="openCity('clearance')">Clearance Items</button>
                 </ul>
                 <p>Our Top Products</p>
             </div>
         </div>
         <div class="productcardSection">
             <div class="container">
-                <div class="productcard">
-                    <div class="carditems">
+                <div class="productcard ">
+                    <div class="carditems allcards" id="featured">
                         <div class="card">
                             <div class="cardimage1">
                                 <img src="./images/product-card/product1.png" alt="Denim Jeans">
@@ -326,7 +302,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carditems">
+                    <div class="carditems allcards" id="new_arrivals">
                         <div class="card">
                             <div class="cardimage2">
                                 <img src="./images/product-card/product2.png" alt="Denim Jeans">
@@ -345,7 +321,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carditems">
+                    <div class="carditems allcards">
                         <div class="card">
                             <div class="cardimage3">
                                 <img src="./images/product-card/product3.jpg" alt="Denim Jeans">
@@ -364,7 +340,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carditems">
+                    <div class="carditems allcards" id="clearance">
                         <div class="card">
                             <div class="cardimage4">
                                 <img src="./images/product-card/product4.jpg" alt="Denim Jeans">
@@ -385,7 +361,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carditems">
+                    <div class="carditems allcards">
                         <div class="card">
                             <div class="cardimage5">
                                 <img src="./images/product-card/product5.jpg" alt="Denim Jeans">
@@ -397,8 +373,8 @@
                                 </div>
                             </div>
                             <div class="cardDescription">
-                                <div class="card-heading" style="padding-bottom: 37px;">
-                                    <h5>BioGaia Probiotic Drops 5mL</h5>
+                                <div class="card-heading">
+                                    <h5>BioGaia Probiotic Drops 5mL</h5><br>
                                 </div>
                                 <div class="price">$395.00</div>
                             </div>
@@ -416,7 +392,8 @@
             <div class="services_banners">
                 <div class="servicesTop">
                     <div class="servicesbanner">
-                        <img src="./images/instore-services/instore-services1.png" class="instoreimage" alt="banner1">
+                        <div class="bannerimage"><img src="./images/instore-services/instore-services1.png"
+                                class="instoreimage" alt="banner1"></div>
                         <h4><a href="#" class="instoreText"> Perception Services
                                 <i class="icon-arrow-right-circle servicebuttonsize"></i>
                             </a></h4>
@@ -677,12 +654,19 @@
         </div>
     </footer>
 
-
-
-
 </body>
 <script src='./js/jquery-min.js'></script>
 <script src='./js/slick-min.js'></script>
 <script src="./js/script.js"></script>
+<script>
+    function openCity(cityName) {
+        var i;
+        var x = document.getElementsByClassName("allcards");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(cityName).style.display = "block";
+    }
+</script>
 
 </html>
