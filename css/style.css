@@ -77,6 +77,7 @@ section#hero-section {
     background-position: center center;
 }
 
+.navbar-copy-navbar,
 .mobile-nav {
     display: none;
 }
@@ -530,7 +531,6 @@ section#hero-section {
 
 .product_section ul button {
     text-decoration: none;
-    color: #000;
     font-size: 1.8rem;
     font-weight: 600;
     padding: 0 1rem;
@@ -542,13 +542,6 @@ section#hero-section {
     cursor: pointer;
 }
 
-/* .product_section ul button:first-child {
-    color: #0973BA;
-}
-
-.product_section ul button:hover {
-    color: #0973BA;
-} */
 
 .product_section ul::before {
     content: " ";
@@ -754,6 +747,13 @@ section#hero-section {
     bottom: .5rem;
 }
 
+.firstservices,
+.secondservices,
+.thirdservices,
+.forthservices {
+    display: flex;
+    gap: 1.5rem;
+}
 
 .servicesbanner::before {
     content: " ";
@@ -1398,25 +1398,6 @@ input[type=submit] {
     display: block;
 }
 
-
-.next {
-    bottom: 3rem;
-    left: 13rem;
-    position: relative;
-    font-size: 6rem;
-    color: #0973ba;
-}
-
-
-.previous {
-    font-size: 6rem;
-    position: relative;
-    left: 12rem;
-    color: #0973ba;
-    bottom: 3rem;
-    z-index: 1;
-}
-
 .brandnext {
     top: 40%;
     position: absolute;
@@ -1578,9 +1559,12 @@ input[type=submit] {
         font-size: 1.8rem;
     }
 
+    .footer-contact_detail_section p {
+        font-size: 1.65rem;
+    }
+
     .dropbtnShopAll,
     .dropdown-content ul li a,
-    .footer-contact_detail_section p,
     .categories a,
     .footerbottom {
         font-size: 1.9rem;
@@ -1600,13 +1584,13 @@ input[type=submit] {
     .header-call p span a,
     .bannerHeading,
     .instore-text,
-    .product_section ul li a,
+    .product_section ul button,
     .newsletterSection .footer-contact_detail_section p:nth-child(1) {
         font-size: 2.5rem;
     }
 
     .footer-contact_detail_section p span a {
-        font-size: 3rem;
+        font-size: 2.7rem;
     }
 
     .welcometext h3 {
@@ -1638,6 +1622,7 @@ input[type=submit] {
         right: 8.8rem;
         bottom: 2.6rem;
     }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -1758,9 +1743,65 @@ input[type=submit] {
 }
 
 @media only screen and (max-width: 768px) {
-    section {
+    /* section {
         border: 2px solid #0973ba;
         margin: 5rem 14rem;
+    } */
+
+    /* 
+    .navbar-copy-navbar ul {
+        list-style: none;
+        font-size: 4rem;
+        text-decoration: none;
+    }
+    
+    .navbar-copy-navbar ul li a {
+        text-decoration: none;
+        color: black;
+    } */
+
+    .navbar-copy-navbar .select li {
+        display: none;
+        cursor: pointer;
+        padding: 5px;
+        border-top: 1px solid black;
+        font-size: 3rem;
+    }
+
+    .navbar-copy-navbar .select li:first-child {
+        display: block;
+        border-top: 0px;
+    }
+
+    .navbar-copy-navbar .select {
+        border: 1px solid black;
+        display: inline-block;
+        padding: 0;
+        border-radius: 4px;
+        position: relative;
+    }
+
+    .navbar-copy-navbar .select li:hover {
+        background-color: #ddd;
+    }
+
+    .navbar-copy-navbar .select li:first-child:hover {
+        background-color: transparent;
+    }
+
+    .navbar-copy-navbar .select.open li {
+        display: block;
+    }
+
+    .navbar-copy-navbar .select span:before {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        content: "\2193";
+    }
+
+    .navbar-copy-navbar .select.open span:before {
+        content: "\2191";
     }
 
     .optifast-brand img,
@@ -1794,12 +1835,13 @@ input[type=submit] {
         justify-items: center;
     }
 
-    .mobile-nav {
+    .mobile-nav,
+    .navbar-copy-navbar {
         display: block;
     }
 
     .mobile-menu {
-        clip-path: circle(87% at 50% -35%);
+        clip-path: circle(95% at 50% -35%);
     }
 
     .dropdown-content a {
@@ -2095,7 +2137,6 @@ input[type=submit] {
     }
 
     .top-products {
-        border: 2px solid #0973ba;
         padding: 5rem 0 8rem 0;
         margin: 0 5rem;
     }
@@ -2510,12 +2551,4 @@ input[type=submit] {
     .mobile-menu {
         clip-path: circle(85% at 50% -35%);
     }
-}
-
-.tablink {
-    color: #0973BA;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: none;
 }

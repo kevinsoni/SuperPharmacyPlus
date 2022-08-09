@@ -1,26 +1,15 @@
 $().ready(function () {
     $('.slick-carousel').slick({
         arrows: false,
-        centerPadding: "0",
         dots: false,
         infinite: true,
-        // autoplay: true,
-        // autoplaySpeed: 3000,
         fade: true,
-        centerMode: true,
-        adaptiveHeight: true,
-        focusOnSelect: true,
-        prevArrow: '<i class="fa-solid fa-angle-left next"></i>',
-        nextArrow: '<i class="fa-solid fa-angle-right previous"></i>',
         responsive: [
             {
                 breakpoint: 769,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    arrows: true,
-                    prevArrow: '<i class="fa-solid fa-angle-left next"></i>',
-                    nextArrow: '<i class="fa-solid fa-angle-right previous"></i>',
                 }
             },
             {
@@ -28,9 +17,6 @@ $().ready(function () {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    arrows: true,
-                    prevArrow: '<i class="fa-solid fa-angle-left next"></i>',
-                    nextArrow: '<i class="fa-solid fa-angle-right previous"></i>',
                 }
             }
         ]
@@ -52,8 +38,6 @@ $('.usp').slick({
     // centerMode: true,
     arrows: false,
     focusOnSelect: true,
-    slidesToShow: 4,
-    slidesToScroll: 4,
     // autoplay: true,
     // autoplaySpeed: 3000,
     responsive: [
@@ -78,6 +62,13 @@ $('.usp').slick({
         },
         {
             breakpoint: 426,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 375,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -205,10 +196,6 @@ $('.brands').slick({
             }
         }
     ]
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-
 });
 
 
@@ -231,3 +218,34 @@ function openPage(pageName, elmnt, color) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+
+$(".select").click(function () {
+    var is_open = $(this).hasClass("open");
+    if (is_open) {
+        $(this).removeClass("open");
+    } else {
+        $(this).addClass("open");
+    }
+});
+
+$(".select li").click(function () {
+
+    var selected_value = $(this).html();
+    var first_li = $(".select li:first-child").html();
+
+    $(".select li:first-child").html(selected_value);
+    $(this).html(first_li);
+
+});
+
+$(document).mouseup(function (event) {
+
+    var target = event.target;
+    var select = $(".select");
+
+    if (!select.is(target) && select.has(target).length === 0) {
+        select.removeClass("open");
+    }
+
+});

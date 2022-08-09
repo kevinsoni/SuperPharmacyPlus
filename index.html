@@ -8,6 +8,8 @@
     <script src="https://kit.fontawesome.com/0d1063cf1c.js" crossorigin="anonymous"></script>
     <link rel='stylesheet' href='./css/slick.css'>
     <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -29,7 +31,6 @@
                     </div>
                     <div class="site-nav-menu">
                         <div class="primary-menu">
-
                             <div class="header-search">
                                 <form action="/action_page.php" target="_blank" method="get">
                                     <input type="text" placeholder="Search entire store here" name="search">
@@ -57,6 +58,29 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="navbar-copy-navbar">
+                                <!-- <div class="dropdownShopAll">
+                                    <button class="dropbtnShopAll">Shop All &nbsp;<i
+                                            class="fa-solid fa-angle-down"></i></button>
+                                    <div class="dropdown-contentShopAll">
+                                        <a href="#">Pharmacy</a>
+                                        <a href="#">Vitamins</a>
+                                        <a href="#">Sun Care</a>
+                                        <a href="#">Skin Care</a>
+                                        <a href="#">First Aid</a>
+                                    </div>
+                                </div> -->
+                                <ul class="select">
+                                    <li><a href="#">Health Equipment</a></li>
+                                    <li><a href="#">Baby</a></li>
+                                    <li><a href="#">Dental</a></li>
+                                    <li><a href="#">Diabetes</a></li>
+                                    <li><a href="#">Eye & Ear</a></li>
+                                    <li><a href="#">Incontinence</a></li>
+                                    <li><a href="#">Skin</a></li>
+                                    <li><a href="#">Sport</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="header-cart">
@@ -74,7 +98,6 @@
                                 $0.00
                             </p>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -269,11 +292,12 @@
         <div class="product_section">
             <div class="container">
                 <ul>
-                    <button class="tablink" onclick="openPage('featured', this, '#0973BA')">Featured</button>
-                    <li><a href="#"><span style="color:rgb(201, 201, 201);">/</span></a></li>
-                    <button class="tablink" onclick="openPage('new_arrivals', this, '#0973BA')" id="defaultOpen">New
+                    <button class="tablink" onclick="openPage('featured', this, '#0973BA')"
+                        id="defaultOpen">Featured</button>
+                    <li><a><span style="color:rgb(201, 201, 201);">/</span></a></li>
+                    <button class="tablink" onclick="openPage('new_arrivals', this, '#0973BA')">New
                         Arrivals</button>
-                    <li><a href="#"><span style="color:rgb(201, 201, 201);">/</span></a></li>
+                    <li><a><span style="color:rgb(201, 201, 201);">/</span></a></li>
                     <button class="tablink" onclick="openPage('clearance', this, '#0973BA')">Clearance
                         Items</button>
                 </ul>
@@ -282,7 +306,7 @@
         </div>
         <div class="productcardSection">
             <div class="container">
-                <div class="productcard tabcontent" id="new_arrivals">
+                <div class="productcard tabcontent" id="featured">
                     <div class=" carditems">
                         <div class="card">
                             <div class="cardimage1">
@@ -383,7 +407,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="productcard tabcontent" id="featured">
+                <div class="productcard tabcontent" id="new_arrivals">
                     <div class="carditems">
                         <div class="card">
                             <div class="cardimage1">
@@ -450,63 +474,79 @@
         </div>
     </section>
 
+
+
     <!-- Instore Services -->
     <div class="instore-services">
         <div class="container">
             <div class="instore-text"> Instore Services </div>
             <div class="services_banners">
                 <div class="servicesTop">
-                    <div class="servicesbanner">
-                        <div class="bannerimage"><img src="./images/instore-services/instore-services1.png"
-                                class="instoreimage" alt="banner1"></div>
-                        <h4><a href="#" class="instoreText"> Perception Services
-                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
-                            </a></h4>
+                    <div class="firstservices">
+                        <div class="servicesbanner">
+                            <div class="bannerimage"><img src="./images/instore-services/instore-services1.png"
+                                    class="instoreimage" alt="banner1"></div>
+                            <h4><a href="#" class="instoreText"> Perception Services
+                                    <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                                </a></h4>
+                        </div>
+                        <div class="servicesbanner">
+                            <div class="bannerimage"><img src="./images/instore-services/instore-services2.png"
+                                    alt="banner1" class="instoreimage"></div>
+                            <h4><a href="#" class="instoreText"> Baby & Child Health
+                                    <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                                </a></h4>
+                        </div>
                     </div>
-                    <div class="servicesbanner">
-                        <img src="./images/instore-services/instore-services2.png" alt="banner1" class="instoreimage">
-                        <h4><a href="#" class="instoreText"> Baby & Child Health
-                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
-                            </a></h4>
-                    </div>
-                    <div class="servicesbanner">
-                        <img src="./images/instore-services/instore-services3.png" alt="banner1" class="instoreimage">
-                        <h4><a href="#" id="services3" class="instoreText"> Continence
-                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
-                            </a></h4>
-                    </div>
-                    <div class="servicesbanner">
-                        <img src="./images/instore-services/instore-services4.png" alt="banner1" class="instoreimage">
-                        <h4><a href="#" id="services4" class="instoreText"> Diabetes
-                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
-                            </a></h4>
+                    <div class="secondservices">
+                        <div class="servicesbanner">
+                            <div class="bannerimage"><img src="./images/instore-services/instore-services3.png"
+                                    alt="banner1" class="instoreimage"></div>
+                            <h4><a href="#" id="services3" class="instoreText"> Continence
+                                    <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                                </a></h4>
+                        </div>
+                        <div class="servicesbanner">
+                            <div class="bannerimage"><img src="./images/instore-services/instore-services4.png"
+                                    alt="banner1" class="instoreimage"></div>
+                            <h4><a href="#" id="services4" class="instoreText"> Diabetes
+                                    <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                                </a></h4>
+                        </div>
                     </div>
                 </div>
-
                 <div class="servicesBottom">
-                    <div class="servicesbanner">
-                        <img src="./images/instore-services/instore-services5.png" alt="banner1" class="instoreimage">
-                        <h4><a href="#" id="services5" class="instoreText"> Health Information
-                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
-                            </a></h4>
+                    <div class="thirdservices">
+                        <div class="servicesbanner">
+                            <div class="bannerimage"><img src="./images/instore-services/instore-services5.png"
+                                    alt="banner1" class="instoreimage"></div>
+                            <h4><a href="#" id="services5" class="instoreText"> Health Information
+                                    <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                                </a></h4>
+                        </div>
+                        <div class="servicesbanner">
+                            <div class="bannerimage"><img src="./images/instore-services/instore-services6.png"
+                                    alt="banner1" class="instoreimage"></div>
+                            <h4><a href="#" id="services6" class="instoreText"> Medication Aids
+                                    <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                                </a></h4>
+                        </div>
                     </div>
-                    <div class="servicesbanner">
-                        <img src="./images/instore-services/instore-services6.png" alt="banner1" class="instoreimage">
-                        <h4><a href="#" id="services6" class="instoreText"> Medication Aids
-                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
-                            </a></h4>
-                    </div>
-                    <div class="servicesbanner">
-                        <img src="./images/instore-services/instore-services7.png" alt="banner1" class="instoreimage">
-                        <h4><a href="#" id="services7" class="instoreText"> Gourmet Meals
-                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
-                            </a></h4>
-                    </div>
-                    <div class="servicesbanner">
-                        <img src="./images/instore-services/instore-services8.png" alt="banner1" class="instoreimage">
-                        <h4><a href="#" id="services8" class="instoreText"> IGA X-press
-                                <i class="icon-arrow-right-circle servicebuttonsize"></i>
-                            </a></h4>
+                    <div class="forthservices">
+                        <div class="servicesbanner">
+                            <div class="bannerimage"><img src="./images/instore-services/instore-services7.png"
+                                    alt="banner1" class="instoreimage"></div>
+                            <h4><a href="#" id="services7" class="instoreText"> Gourmet Meals
+                                    <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                                </a></h4>
+                        </div>
+                        <div class="servicesbanner">
+                            <div class="bannerimage"><img src="./images/instore-services/instore-services8.png"
+                                    alt="banner1" class="instoreimage"></div>
+                            <h4><a href="#" id="services8" class="instoreText"> IGA X-press
+                                    <i class="icon-arrow-right-circle servicebuttonsize"></i>
+                                </a></h4>
+                        </div>
                     </div>
                 </div>
             </div>
