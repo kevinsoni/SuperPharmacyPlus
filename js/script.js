@@ -145,6 +145,10 @@ $('.brands').slick({
             breakpoint: 1440,
             settings: "unslick"
         },
+        {
+            breakpoint: 1024,
+            settings: "unslick"
+        },
         // {
         //     breakpoint: 1280,
         //     settings: {
@@ -155,16 +159,6 @@ $('.brands').slick({
         //         arrows: false,
         //     }
         // },
-        {
-            breakpoint: 1025,
-            settings: {
-                slidesToShow: 4,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: false,
-                arrows: false,
-            }
-        },
         {
             breakpoint: 769,
             settings: {
