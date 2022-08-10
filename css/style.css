@@ -1802,7 +1802,7 @@ input[type=submit] {
     }
 
     html {
-        font-size: 35%;
+        font-size: 40%;
     }
 }
 
@@ -2038,7 +2038,7 @@ input[type=submit] {
     }
 
     .header-call p {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .header-cart img {
@@ -2291,7 +2291,7 @@ input[type=submit] {
     }
 
     .uspText {
-        font-size: 3rem;
+        font-size: 4rem;
         padding-left: 2rem;
     }
 
@@ -2390,6 +2390,11 @@ input[type=submit] {
         max-width: 65%;
     }
 
+    .header-call p span a {
+        font-size: 6rem;
+        padding: 0 2rem;
+    }
+
     .contact_detail_section .footer-contact_detail_section:nth-child(1) img {
         max-width: 18%;
     }
@@ -2467,7 +2472,7 @@ input[type=submit] {
     }
 
     .newsletterSection .newsletterButton {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         padding: 1.5rem 5rem;
     }
 
@@ -2501,6 +2506,10 @@ input[type=submit] {
     .quicklinkssection .quicklinksBottom a {
         font-size: 4rem;
         line-height: 8rem;
+    }
+
+    .quicklinkssection .quicklinksBottom a {
+        border-bottom: 1px solid #000;
     }
 
     .quicklinkssection ul li a {
@@ -2545,10 +2554,6 @@ input[type=submit] {
         top: 58px;
     }
 
-    .socialmedia ul li a img,
-    .footertrustlogos ul li img {
-        max-width: 50%;
-    }
 }
 
 @media screen and (max-width: 425px) {
@@ -2589,7 +2594,7 @@ input[type=submit] {
     }
 
     .header-cart img {
-        max-width: 18%;
+        max-width: 20%;
     }
 
     .header-search input[type=text] {
@@ -2615,12 +2620,14 @@ input[type=submit] {
     }
 
     #currencyselector {
-        left: 4rem;
+        left: 6rem;
+        font-size: 4rem;
     }
 
     img#auslogo {
         bottom: 3.75rem;
-        left: 4.5rem;
+        left: 6.5rem;
+        max-width: 18%;
     }
 
     .dropdown-content ul li a {
@@ -2628,18 +2635,29 @@ input[type=submit] {
     }
 
     .site-nav-menu {
-        top: 46px;
+        top: 65px;
+    }
+
+    .header-call p span a {
+        font-size: 7.8rem;
+        padding: 0 2rem;
+    }
+
+    .header-call p {
+        font-size: 4.5rem;
     }
 
     .currency {
-        left: 10.4rem;
-        top: 4.5rem;
+        left: 12.4rem;
+        top: 4rem;
+        font-size: 4.6rem;
     }
 
     .cart_number {
-        right: 18rem;
-        bottom: 4.5rem;
-        font-size: 2.5rem;
+        right: 19rem;
+        bottom: 5.5rem;
+        font-size: 3rem;
+        border-radius: 2rem;
     }
 
     .logo {
@@ -2663,7 +2681,7 @@ input[type=submit] {
     }
 
     .uspText {
-        font-size: 4.5rem;
+        font-size: 5.5rem;
         padding-left: 5rem;
     }
 
@@ -2707,6 +2725,20 @@ input[type=submit] {
         font-size: 5rem;
     }
 
+    .dropbtn {
+        font-size: 5rem;
+    }
+
+    .dropdownShopAll-mobile:hover .dropdown-contentShopAll-mobile {
+        display: block;
+        top: 50rem;
+        right: 18rem;
+    }
+
+    .dropbtnShopAll-mobile {
+        padding: 5px 28px;
+    }
+
     .footer-contact_detail_section p:nth-child(2) {
         font-size: 4.3rem;
     }
@@ -2730,9 +2762,17 @@ input[type=submit] {
     .welcometext p:nth-child(3),
     .welcometext p:nth-child(4),
     .welcometext p:nth-child(5) {
-        font-size: 4.3rem;
-        padding: 1.7rem rem 0;
-        line-height: 6.2rem;
+        font-size: 4.5rem;
+        line-height: 7rem;
+    }
+
+    .welcometext p:nth-child(2) {
+        font-size: 5rem;
+        line-height: 5.5rem;
+    }
+
+    .welcometext h3 {
+        font-size: 10rem;
     }
 
     .instore-text::before,
@@ -2751,7 +2791,7 @@ input[type=submit] {
     }
 
     .newsletterSection .footer-contact_detail_section p:nth-child(1) {
-        font-size: 6.0rem;
+        font-size: 7.5rem;
     }
 
     .footer-contact_detail_section img {
@@ -2768,11 +2808,54 @@ input[type=submit] {
     }
 
     .newsletterSection .footer-contact_detail_section p:nth-child(2) {
-        font-size: 3.0rem;
+        font-size: 4.0rem;
+        padding-bottom: 4rem;
+    }
+
+    .headertop {
+        padding: 4rem 0;
+    }
+
+    .card .card-heading h5 {
+        font-size: 4.5rem;
+    }
+
+    .price {
+        font-size: 5.2rem;
+    }
+
+    .price span {
+        color: #C9C9C9;
+        font-size: 4.5rem;
+    }
+
+    .newsletterSection form {
+        display: inline;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .newsletterSection input[type=text],
+    .newsletterSection input[type=email],
+    input[type=submit],
+    .newsletterSection .newsletterButton {
+        font-size: 4rem;
+    }
+
+    .newsletterSection input[type=text] {
+        width: 50%;
+    }
+
+    .newsletterSection input[type=email] {
+        width: 70%;
+    }
+
+    .newsletterSection .newsletterButton {
+        width: 50%;
     }
 
     .newsletterSection .footer-contact_detail_section {
-        display: block;
+        display: inline;
         align-items: center;
         text-align-last: center;
         padding-bottom: 2rem;
@@ -2781,14 +2864,12 @@ input[type=submit] {
     .newsletterSection input[type=text],
     .newsletterSection input[type=email],
     input[type=submit] {
-        padding: 1.2rem 10rem 1.2rem 1.2rem;
-        margin: 0.8rem 0.2rem;
+        padding: 2.2rem 2rem 2.2rem 1.2rem;
+        margin: 1rem 1.5rem;
         border: 0.1rem solid #ccc;
-        font-size: 2.5rem;
     }
 
     .newsletterSection .newsletterButton {
-        font-size: 3rem;
         padding: 1.3rem 6.4rem;
         margin-top: 0.7rem;
     }
@@ -2808,23 +2889,22 @@ input[type=submit] {
     }
 
     .quicklinkssection ul li a {
-        font-size: 4rem;
-        line-height: 6rem;
+        font-size: 5rem;
+        line-height: 9rem;
     }
 
     .quicklinksTop {
-        font-size: 5rem;
+        font-size: 7rem;
         padding-bottom: 2rem;
     }
 
     .quicklinkssection .quicklinksBottom a {
-        font-size: 3.5rem;
-        border-bottom: 1px solid black;
+        font-size: 5rem;
     }
 
     .quicklinks h3 {
         padding-bottom: 4rem;
-        font-size: 5rem;
+        font-size: 7rem;
     }
 
     .socialmedia ul li {
@@ -2832,11 +2912,19 @@ input[type=submit] {
     }
 
     .paymentmethods p {
-        font-size: 5rem;
+        font-size: 7rem;
         font-family: 'Ubuntu', sans-serif;
         padding: 3rem 0 4rem;
     }
 
+    .paymentmethods ul li img {
+        width: 16%;
+    }
+
+    .socialmedia ul li a img,
+    .footertrustlogos ul li img {
+        max-width: 79%;
+    }
 
     .footerbottom {
         padding: 5rem 0;
@@ -2863,6 +2951,17 @@ input[type=submit] {
     .brandnext,
     .brandprevious {
         font-size: 6rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .newsletterSection .newsletterButton {
+        width: 35%;
+    }
+
+    .newsletterSection .newsletterButton {
+        padding: 2.3rem 6.4rem;
+        margin-top: 0.7rem;
     }
 }
 
