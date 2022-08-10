@@ -1218,6 +1218,14 @@ input[type=submit] {
     color: #0E66A1;
 }
 
+.primary-menu h4 {
+    display: none;
+}
+
+.navbarmenu {
+    display: flex;
+}
+
 .quicklinkssection .quicklinksBottom a {
     text-decoration: none;
     color: #ed2328;
@@ -1837,6 +1845,10 @@ input[type=submit] {
         color: #000;
     }
 
+    .primary-menu h4 {
+        display: flex;
+    }
+
     .navbar-copy-navbar .select a {
         color: #0973BA;
         font-weight: 600;
@@ -1887,6 +1899,7 @@ input[type=submit] {
         list-style: none;
         padding: 5px;
     }
+
 
     .primary-menu h4 {
         font-family: 'RageItalic';
