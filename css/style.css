@@ -1828,10 +1828,6 @@ input[type=submit] {
         border-top: 0px;
     }
 
-    /* .mobileheader-flex {
-        gap: 20px;
-    } */
-
     .mobileheader-flex {
         display: inline-flex;
     }
@@ -1940,10 +1936,6 @@ input[type=submit] {
         top: 45rem;
         right: 31rem;
     }
-
-    /* .mobileheader-flex {
-        display: block;
-    } */
 
     .navbar-copy-navbar .select {
         border: 1px solid black;
@@ -3000,6 +2992,10 @@ input[type=submit] {
     .brandprevious {
         font-size: 6rem;
     }
+
+    .icon-arrow-right-circle {
+        font-size: 3rem;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -3008,8 +3004,31 @@ input[type=submit] {
     }
 
     .newsletterSection .newsletterButton {
-        padding: 2.3rem 6.4rem;
-        margin-top: 0.7rem;
+        padding: 2.3rem 0.4rem;
+        margin-top: 1.7rem;
+    }
+
+    .socialmedia ul li a img,
+    .footertrustlogos ul li img {
+        padding: 0;
+    }
+
+    .paymentmethods ul li img {
+        width: 25%;
+    }
+
+    .paymentmethods {
+        padding: 10px;
+    }
+
+    .bannerTextAtEnd p,
+    .bannerTextAtStart p {
+        font-size: 3.7rem;
+    }
+
+    .bannerTextAtEnd {
+        right: 4.5rem;
+        top: 3rem;
     }
 }
 
@@ -3017,4 +3036,14 @@ input[type=submit] {
     .mobile-menu {
         clip-path: circle(85% at 50% -35%);
     }
+
+    .welcometext {
+        padding: 4rem 0rem;
+    }
+
+    .welcomesection {
+        display: inline-block;
+        padding: 0;
+    }
+
 }
