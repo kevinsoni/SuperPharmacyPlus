@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/0d1063cf1c.js" crossorigin="anonymous"></script>
     <link rel='stylesheet' href='./css/slick.css'>
+    <link rel="stylesheet" href="./css/navigation.css">
     <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery2.2.2.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <link rel="stylesheet"
@@ -51,25 +53,36 @@
                                                 class="fa-solid fa-angle-down"></i></button>
                                         <div class="dropdown-content">
                                             <ul>
-                                                <li><a href="#">Favourites</a></li>
-                                                <li> <a href="#">Wishlist</a></li>
-                                                <li> <a href="#">Log-Out</a></li>
+                                                <li><a href="/">Favourites</a></li>
+                                                <li> <a href="/">Wishlist</a></li>
+                                                <li> <a href="/">Log-Out</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <h4>Categories</h4>
-                            <div class="navbar-copy-navbar">
+                        </div>
+                        <div class="container">
+                            <div id='menu'>
+                                <input type='checkbox' />
+                                <label>&#8801;<span>Categories</span></label>
                                 <ul>
-                                    <li><a href="#">Health Equipment</a></li>
-                                    <li><a href="#">Baby</a></li>
-                                    <li><a href="#">Dental</a></li>
-                                    <li><a href="#">Diabetes</a></li>
-                                    <li><a href="#">Eye & Ear</a></li>
-                                    <li><a href="#">Incontinence</a></li>
-                                    <li><a href="#">Skin</a></li>
-                                    <li><a href="#">Sport</a></li>
+                                    <li><a class='prett' href='#' title="Shop All">Shop All</a>
+                                        <ul class='menus'>
+                                            <li><a href='#' title="Drop Menu1">Pharmacy</a></li>
+                                            <li><a href='#' title="Drop Menu2">Vitamins</a></li>
+                                            <li><a href='#' title="Drop Menu3">Skin Care</a></li>
+                                            <li><a href='#' title="Drop Menu4">Sun Care</a></li>
+                                            <li><a href='#' title="Drop Menu5">First Aid</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href='#' title="Menu 1">Health Equipment</a></li>
+                                    <li><a href='#' title="Menu 1">Baby</a></li>
+                                    <li><a href='#' title="Menu 1">Dental</a></li>
+                                    <li><a href='#' title="Menu 1">Eye & Ear</a></li>
+                                    <li><a href='#' title="Menu 1">Incontinence</a></li>
+                                    <li><a href='#' title="Menu 1">Skin</a></li>
+                                    <li><a href='#' title="Menu 1">Sport</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -114,10 +127,13 @@
                         <img src="./images/shipping.png" alt="shop">
                         <div class="uspText"><span>Free Shippingon</span> orders over $100*</div>
                     </div>
+                    <div class="column-usp">
+                        <img src="./images/hire.png" alt="hire">
+                        <div class="uspText"><span>Hire Health</span> Equipment</div>
+                    </div>
                 </div>
             </div>
         </div>
-
 
         <!-- NAVBAR-COPY - SECTION 3 -->
         <div class="headerbottom">
@@ -397,7 +413,28 @@
                             </div>
                         </div>
                     </div>
+                    <div class="carditems">
+                        <div class="card">
+                            <div class="cardimage5">
+                                <img src="./images/product-card/product3.jpg" alt="Denim Jeans">
+                                <div class="cardhover">
+                                    <img src="./images/zoombutton.png" alt="zoombutton">
+                                    <button type="button" class="cardbutton"
+                                        onclick="alert('Your Product has been Successfully Added to Cart')">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                            <div class="cardDescription">
+                                <div class="card-heading">
+                                    <h5>Product Description</h5><br>
+                                </div>
+                                <div class="price">$5000.00</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- NEW ARRIVAL -->
                 <div class="productcard tabcontent" id="new_arrivals">
                     <div class="carditems">
                         <div class="card">
@@ -422,6 +459,63 @@
                     </div>
                     <div class="carditems">
                         <div class="card">
+                            <div class="cardimage5">
+                                <img src="./images/product-card/product5.jpg" alt="Denim Jeans">
+                                <div class="cardhover">
+                                    <img src="./images/zoombutton.png" alt="zoombutton">
+                                    <button type="button" class="cardbutton"
+                                        onclick="alert('Your Product has been Successfully Added to Cart')">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                            <div class="cardDescription">
+                                <div class="card-heading">
+                                    <h5>BioGaia Probiotic Drops 5mL</h5><br>
+                                </div>
+                                <div class="price">$395.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carditems">
+                        <div class="card">
+                            <div class="cardimage5">
+                                <img src="./images/product-card/product5.jpg" alt="Denim Jeans">
+                                <div class="cardhover">
+                                    <img src="./images/zoombutton.png" alt="zoombutton">
+                                    <button type="button" class="cardbutton"
+                                        onclick="alert('Your Product has been Successfully Added to Cart')">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                            <div class="cardDescription">
+                                <div class="card-heading">
+                                    <h5>BioGaia Probiotic Drops 5mL</h5><br>
+                                </div>
+                                <div class="price">$395.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carditems">
+                        <div class="card">
+                            <div class="cardimage5">
+                                <img src="./images/product-card/product5.jpg" alt="Denim Jeans">
+                                <div class="cardhover">
+                                    <img src="./images/zoombutton.png" alt="zoombutton">
+                                    <button type="button" class="cardbutton"
+                                        onclick="alert('Your Product has been Successfully Added to Cart')">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                            <div class="cardDescription">
+                                <div class="card-heading">
+                                    <h5>BioGaia Probiotic Drops 5mL</h5><br>
+                                </div>
+                                <div class="price">$395.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carditems">
+                        <div class="card">
                             <div class="cardimage2">
                                 <img src="./images/product-card/product2.png" alt="Denim Jeans">
                                 <div class="cardhover">
@@ -439,7 +533,28 @@
                             </div>
                         </div>
                     </div>
+                    <div class="carditems">
+                        <div class="card">
+                            <div class="cardimage5">
+                                <img src="./images/product-card/product3.jpg" alt="Denim Jeans">
+                                <div class="cardhover">
+                                    <img src="./images/zoombutton.png" alt="zoombutton">
+                                    <button type="button" class="cardbutton"
+                                        onclick="alert('Your Product has been Successfully Added to Cart')">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                            <div class="cardDescription">
+                                <div class="card-heading">
+                                    <h5>Product Description</h5><br>
+                                </div>
+                                <div class="price">$5000.00</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- CLEARANCE -->
                 <div class="productcard tabcontent" id="clearance">
                     <div class="carditems">
                         <div class="card">
@@ -457,6 +572,143 @@
                                     <h5>Actimove Standard Walker | Lower Leg High-Rise Moon Boot</h5>
                                 </div>
                                 <div class="price">$559.95</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carditems">
+                        <div class=" card">
+                            <div class="cardimage4">
+                                <img src="./images/product-card/product4.jpg" alt="Denim Jeans">
+                                <div class="cardhover">
+                                    <img src="./images/zoombutton.png" alt="zoombutton">
+                                    <button type="button" class="cardbutton"
+                                        onclick="alert('Your Product has been Successfully Added to Cart')">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                            <div class="cardDescription">
+                                <div class="card-heading">
+                                    <h5>Sterilight SC-320 13 gpm Cobalt series uv system</h5>
+                                </div>
+                                <div class="price">$175.00 <span>
+                                        <div class="price-line2"></div>$195.95
+                                    </span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carditems">
+                        <div class="card">
+                            <div class="cardimage5">
+                                <img src="./images/product-card/product5.jpg" alt="Denim Jeans">
+                                <div class="cardhover">
+                                    <img src="./images/zoombutton.png" alt="zoombutton">
+                                    <button type="button" class="cardbutton"
+                                        onclick="alert('Your Product has been Successfully Added to Cart')">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                            <div class="cardDescription">
+                                <div class="card-heading">
+                                    <h5>BioGaia Probiotic Drops 5mL</h5><br>
+                                </div>
+                                <div class="price">$395.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carditems">
+                        <div class="card">
+                            <div class="cardimage5">
+                                <img src="./images/product-card/product3.jpg" alt="Denim Jeans">
+                                <div class="cardhover">
+                                    <img src="./images/zoombutton.png" alt="zoombutton">
+                                    <button type="button" class="cardbutton"
+                                        onclick="alert('Your Product has been Successfully Added to Cart')">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                            <div class="cardDescription">
+                                <div class="card-heading">
+                                    <h5>Product Description</h5><br>
+                                </div>
+                                <div class="price">$5000.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carditems">
+                        <div class="card">
+                            <div class="cardimage5">
+                                <img src="./images/product-card/product3.jpg" alt="Denim Jeans">
+                                <div class="cardhover">
+                                    <img src="./images/zoombutton.png" alt="zoombutton">
+                                    <button type="button" class="cardbutton"
+                                        onclick="alert('Your Product has been Successfully Added to Cart')">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                            <div class="cardDescription">
+                                <div class="card-heading">
+                                    <h5>Product Description</h5><br>
+                                </div>
+                                <div class="price">$5000.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carditems">
+                        <div class=" card">
+                            <div class="cardimage4">
+                                <img src="./images/product-card/product4.jpg" alt="Denim Jeans">
+                                <div class="cardhover">
+                                    <img src="./images/zoombutton.png" alt="zoombutton">
+                                    <button type="button" class="cardbutton"
+                                        onclick="alert('Your Product has been Successfully Added to Cart')">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                            <div class="cardDescription">
+                                <div class="card-heading">
+                                    <h5>Sterilight SC-320 13 gpm Cobalt series uv system</h5>
+                                </div>
+                                <div class="price">$175.00 <span>
+                                        <div class="price-line2"></div>$195.95
+                                    </span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carditems">
+                        <div class="card">
+                            <div class="cardimage5">
+                                <img src="./images/product-card/product5.jpg" alt="Denim Jeans">
+                                <div class="cardhover">
+                                    <img src="./images/zoombutton.png" alt="zoombutton">
+                                    <button type="button" class="cardbutton"
+                                        onclick="alert('Your Product has been Successfully Added to Cart')">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                            <div class="cardDescription">
+                                <div class="card-heading">
+                                    <h5>BioGaia Probiotic Drops 5mL</h5><br>
+                                </div>
+                                <div class="price">$395.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carditems">
+                        <div class="card">
+                            <div class="cardimage5">
+                                <img src="./images/product-card/product3.jpg" alt="Denim Jeans">
+                                <div class="cardhover">
+                                    <img src="./images/zoombutton.png" alt="zoombutton">
+                                    <button type="button" class="cardbutton"
+                                        onclick="alert('Your Product has been Successfully Added to Cart')">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                            <div class="cardDescription">
+                                <div class="card-heading">
+                                    <h5>Product Description</h5><br>
+                                </div>
+                                <div class="price">$5000.00</div>
                             </div>
                         </div>
                     </div>
@@ -570,6 +822,9 @@
                     <div class="depend-brand">
                         <a href="#"><img src="./images/brands/brand6.jpg" alt="brand6"></a>
                     </div>
+                    <div class="depend-brand">
+                        <a href="#"><img src="./images/brands/brand6.jpg" alt="brand6"></a>
+                    </div>
                 </div>
             </div>
 
@@ -593,9 +848,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    </div>
     </div>
 
     <!-- CONTACT US -->
@@ -754,5 +1006,18 @@
 <script src='./js/jquery-min.js'></script>
 <script src='./js/slick-min.js'></script>
 <script src="./js/script.js"></script>
+<script>
+    var nav = $('#menu > ul > li');
+    nav.find('li').hide();
+    nav.click(function () {
+        nav.not(this).find('li').hide();
+        $(this).find('li').slideToggle();
+    });
+    $(function () {
+        $('#menu input').click(function () {
+            $('#menu ul').slideToggle()
+        });
+    });
+</script>
 
 </html>

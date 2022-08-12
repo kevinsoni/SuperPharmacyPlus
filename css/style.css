@@ -7,10 +7,6 @@
     src: url(MYRIADPRO-REGULAR.otf);
 }
 
-:root {
-    --blue-color: #;
-}
-
 html {
     font-size: 62.5%;
     transition: all 0.5s;
@@ -22,7 +18,6 @@ html {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-
 }
 
 img {
@@ -35,7 +30,6 @@ img {
     margin: 0 auto;
 }
 
-
 .headertop {
     background-color: #FBF252;
     padding: 1rem 0;
@@ -46,13 +40,6 @@ img {
     align-items: center;
     justify-content: space-between;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 
 .mobile-nav i {
     padding: 4rem 1rem;
@@ -152,6 +139,7 @@ section#hero-section {
     border-color: #fff;
     border-width: .2rem;
     padding: 0 1.5rem;
+    margin: 1.25rem 0;
 }
 
 .header-account p {
@@ -170,6 +158,10 @@ section#hero-section {
     align-items: center;
     position: relative;
     padding: 0 1 rem;
+}
+
+#menu {
+    display: none;
 }
 
 .cart {
@@ -376,7 +368,7 @@ section#hero-section {
     top: 9.5rem;
 }
 
-.banner-subheading {
+.banner-subheading p {
     font-size: 2.4rem;
     font-weight: 200;
     color: #fff;
@@ -592,7 +584,7 @@ section#hero-section {
 
 /* CARD */
 .productcard {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     gap: 1rem;
 }
@@ -1690,7 +1682,7 @@ input[type=submit] {
     }
 
     .bannerTextAtEnd h4,
-    .banner-subheading {
+    .banner-subheading p {
         font-size: 2rem;
     }
 
@@ -1823,6 +1815,11 @@ input[type=submit] {
         font-size: 4rem;
     }
 
+
+    #menu {
+        display: block;
+    }
+
     .navbar-copy-navbar .select li:first-child {
         display: block;
         border-top: 0px;
@@ -1909,13 +1906,11 @@ input[type=submit] {
         text-decoration: none;
         color: #000;
         font-weight: 500;
-        transition: all .5s;
     }
 
     .navbar-copy-navbar ul li a:hover {
         color: #0973BA;
         padding: 3px;
-        background-color: #fed200;
     }
 
     .dropdown-contentShopAll-mobile a {
@@ -1967,7 +1962,7 @@ input[type=submit] {
         content: "\2191";
     }
 
-    .banner-subheading {
+    .banner-subheading p {
         font-size: 3.5rem;
     }
 
@@ -2032,7 +2027,7 @@ input[type=submit] {
     .primary-menu {
         display: grid;
         text-align: center;
-        margin: 5px;
+        margin: 1rem 0rem 20rem 0;
         justify-items: center;
     }
 
@@ -2042,7 +2037,7 @@ input[type=submit] {
     }
 
     .mobile-menu {
-        clip-path: circle(100% at 50% -35%);
+        clip-path: circle(156% at 50% -35%);
     }
 
     .firstservices,
@@ -2710,7 +2705,7 @@ input[type=submit] {
         font-size: 9.2rem;
     }
 
-    .banner-subheading,
+    .banner-subheading p,
     .banner-subheading2,
     .banner-subheading3 {
         font-size: 4.4rem;
@@ -2727,8 +2722,8 @@ input[type=submit] {
 
     .servicesBottom,
     .servicesTop {
-        display: inline-block;
-        padding: 0 15px;
+        display: inline;
+        /* padding: 0 15px; */
     }
 
     .bannerTextAtEnd h4,
@@ -2743,6 +2738,10 @@ input[type=submit] {
 
     .servicesbanner {
         margin: 15px;
+    }
+
+    .categories {
+        padding: 5rem 0 0 0;
     }
 
     .servicebuttonsize {
@@ -2792,7 +2791,7 @@ input[type=submit] {
     }
 
     .footerButton a {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
     .footer-contact_detail_section p span {
@@ -2869,6 +2868,10 @@ input[type=submit] {
         font-size: 4.5rem;
     }
 
+    .mobile-nav i {
+        font-size: 5.5rem;
+    }
+
     .newsletterSection form {
         display: inline;
         width: 100%;
@@ -2877,13 +2880,16 @@ input[type=submit] {
 
     .newsletterSection input[type=text],
     .newsletterSection input[type=email],
-    input[type=submit],
-    .newsletterSection .newsletterButton {
+    input[type=submit] {
         font-size: 4rem;
     }
 
+    .newsletterSection .newsletterButton {
+        font-size: 5rem;
+    }
+
     .newsletterSection input[type=text] {
-        width: 50%;
+        width: 70%;
     }
 
     .newsletterSection input[type=email] {
@@ -2910,7 +2916,7 @@ input[type=submit] {
     }
 
     .newsletterSection .newsletterButton {
-        padding: 1.3rem 6.4rem;
+        padding: 1.9rem 0rem;
         margin-top: 0.7rem;
     }
 
@@ -2954,16 +2960,54 @@ input[type=submit] {
     .paymentmethods p {
         font-size: 7rem;
         font-family: 'Ubuntu', sans-serif;
-        padding: 3rem 0 4rem;
+        padding: 10rem 0 5rem 0;
     }
 
     .paymentmethods ul li img {
         width: 16%;
     }
 
+    .footertrustlogos ul {
+        padding: 5rem 0;
+    }
+
+    .socialmedia {
+        padding: 3rem 0;
+    }
+
+    .socialmedia ul li a img {
+        padding: 0;
+    }
+
     .socialmedia ul li a img,
     .footertrustlogos ul li img {
         max-width: 79%;
+    }
+
+    .slick-carousel .slick-slide,
+    .slick-carousel .slick-slide img {
+        height: auto;
+    }
+
+    .slick-carousel .container {
+        padding: 0;
+    }
+
+    .Slidertext {
+        position: relative;
+        top: 100%;
+        background: #0973BA;
+        text-align: center;
+        padding: 4rem;
+        transform: translate(0, 0);
+    }
+
+    .top-heading-slider2 {
+        color: #fff;
+    }
+
+    .banner-subheading p {
+        color: #000;
     }
 
     .footerbottom {
@@ -2982,10 +3026,17 @@ input[type=submit] {
     .newsletterSection {
         display: inline-block;
         text-align: center;
+        padding: 6rem 0;
     }
 
     .newsletterSection form {
         text-align: center;
+    }
+
+    .category-first-right .allcatogories:nth-child(2),
+    .allcatogories,
+    .category-first-left .allcatogories:nth-child(2) {
+        padding: 2rem;
     }
 
     .brandnext,
@@ -2994,7 +3045,40 @@ input[type=submit] {
     }
 
     .icon-arrow-right-circle {
-        font-size: 3rem;
+        font-size: 4.5rem;
+    }
+
+    .contact_detail_section {
+        padding: 3rem 0 7rem 0;
+    }
+
+    .servicesbanner h4 {
+        padding: 2rem;
+    }
+
+    .instoreText::before {
+        top: 80%;
+    }
+
+    .top-products {
+        margin: 0;
+    }
+
+    .product_section ul::before,
+    .product_section ul::after,
+    .product_section ul li {
+        display: none;
+    }
+
+    .product_section ul {
+        display: grid;
+    }
+
+    .firstservices,
+    .secondservices,
+    .thirdservices,
+    .forthservices {
+        padding: 0;
     }
 }
 
@@ -3004,7 +3088,7 @@ input[type=submit] {
     }
 
     .newsletterSection .newsletterButton {
-        padding: 2.3rem 0.4rem;
+        padding: 2rem 0.4rem;
         margin-top: 1.7rem;
     }
 
@@ -3030,12 +3114,13 @@ input[type=submit] {
         right: 4.5rem;
         top: 3rem;
     }
+
+    html {
+        font-size: 18%;
+    }
 }
 
 @media screen and (max-width: 320px) {
-    .mobile-menu {
-        clip-path: circle(85% at 50% -35%);
-    }
 
     .welcometext {
         padding: 4rem 0rem;

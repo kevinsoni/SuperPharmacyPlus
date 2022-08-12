@@ -38,21 +38,23 @@ $('.usp').slick({
     // centerMode: true,
     arrows: false,
     focusOnSelect: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     // autoplay: true,
     // autoplaySpeed: 3000,
     responsive: [
-        {
-            breakpoint: 2000,
-            settings: "unslick"
-        },
-        {
-            breakpoint: 1440,
-            settings: "unslick"
-        },
-        {
-            breakpoint: 1024,
-            settings: "unslick"
-        },
+        // {
+        //     breakpoint: 2000,
+        //     settings: "unslick"
+        // },
+        // {
+        //     breakpoint: 1440,
+        //     settings: "unslick"
+        // },
+        // {
+        //     breakpoint: 1024,
+        //     settings: "unslick"
+        // },
         {
             breakpoint: 769,
             settings: {
@@ -67,13 +69,13 @@ $('.usp').slick({
                 slidesToScroll: 1
             }
         },
-        {
-            breakpoint: 375,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
+        // {
+        //     breakpoint: 375,
+        //     settings: {
+        //         slidesToShow: 1,
+        //         slidesToScroll: 1
+        //     }
+        // }
     ]
 });
 
@@ -83,25 +85,25 @@ $('.productcard').slick({
     dots: false,
     infinite: true,
     speed: 300,
-    // slidesToShow: 4,
-    // slidesToScroll: 1,
+    slidesToShow: 5,
+    slidesToScroll: 3,
     arrows: false,
     focusOnSelect: true,
     // autoplay: true,
     // autoplaySpeed: 3000,
     responsive: [
-        {
-            breakpoint: 2000,
-            settings: "unslick"
-        },
-        {
-            breakpoint: 1440,
-            settings: "unslick"
-        },
-        {
-            breakpoint: 1024,
-            settings: "unslick"
-        },
+        // {
+        //     breakpoint: 2000,
+        //     settings: "unslick"
+        // },
+        // {
+        //     breakpoint: 1440,
+        //     settings: "unslick"
+        // },
+        // {
+        //     breakpoint: 1024,
+        //     settings: "unslick"
+        // },
         {
             breakpoint: 769,
             settings: {
@@ -130,25 +132,25 @@ $('.brands').slick({
     dots: false,
     infinite: true,
     speed: 300,
-    slidesToShow: 5,
-    slidesToScroll: 1,
+    slidesToShow: 6,
+    slidesToScroll: 6,
     focusOnSelect: true,
     arrows: false,
     // autoplay: true,
     // autoplaySpeed: 3000,
     responsive: [
-        {
-            breakpoint: 2000,
-            settings: "unslick"
-        },
-        {
-            breakpoint: 1440,
-            settings: "unslick"
-        },
-        {
-            breakpoint: 1024,
-            settings: "unslick"
-        },
+        // {
+        //     breakpoint: 2000,
+        //     settings: "unslick"
+        // },
+        // {
+        //     breakpoint: 1440,
+        //     settings: "unslick"
+        // },
+        // {
+        //     breakpoint: 1024,
+        //     settings: "unslick"
+        // },
         // {
         //     breakpoint: 1280,
         //     settings: {
@@ -205,7 +207,7 @@ function openPage(pageName, elmnt, color) {
         // tablinks[i].style.backgroundColor = "";
         tablinks[i].style.color = "";
     }
-    document.getElementById(pageName).style.display = "flex";
+    document.getElementById(pageName).style.display = "block";
     // elmnt.style.backgroundColor = bgcolor;
     elmnt.style.color = color;
 }
