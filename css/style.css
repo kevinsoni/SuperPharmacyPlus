@@ -1313,7 +1313,6 @@ input[type=submit] {
     line-height: 2.88rem;
 }
 
-
 .button1 {
     padding: 2rem 5rem;
     font-weight: bold;
@@ -1815,6 +1814,28 @@ input[type=submit] {
         font-size: 4rem;
     }
 
+    .newsletterSection {
+        background-color: #0973ba;
+        display: block;
+        padding: 2rem 0 4rem 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cardbutton {
+        padding: 2.1rem 4.5rem;
+        background-color: #0973ba;
+        border-radius: 0.5rem;
+        color: #fff;
+        border: 0.1rem solid;
+        font-size: 3rem;
+        font-family: arial;
+        cursor: pointer;
+        position: relative;
+        opacity: 0;
+        /* transition: all 0.5s; */
+    }
 
     #menu {
         display: block;
@@ -1829,7 +1850,9 @@ input[type=submit] {
         display: inline-flex;
     }
 
-    .top-heading-slider {
+    .top-heading-slider,
+    .top-heading-slider2,
+    .top-heading-slider3 {
         font-size: 8rem;
     }
 
@@ -1962,7 +1985,9 @@ input[type=submit] {
         content: "\2191";
     }
 
-    .banner-subheading p {
+    .banner-subheading p,
+    .banner-subheading2,
+    .banner-subheading3 {
         font-size: 3.5rem;
     }
 
@@ -2480,6 +2505,8 @@ input[type=submit] {
 
     .newsletterSection .footer-contact_detail_section {
         width: 40%;
+        display: contents;
+        text-align: center;
     }
 
     .footer-contact_detail_section p:nth-child(2) {
@@ -2488,27 +2515,37 @@ input[type=submit] {
 
     .newsletterSection .footer-contact_detail_section p:nth-child(1) {
         padding: 5px 0 0 0;
+        text-align: center;
     }
 
     .newsletterSection .footer-contact_detail_section p:nth-child(2) {
         font-size: 2.5rem;
-        padding: 5px 0;
+        padding: 0 0 10px 0;
+        text-align: center;
     }
 
     .newsletterSection input[type=text],
     .newsletterSection input[type=email],
     input[type=submit] {
-        font-size: 2.5rem;
+        font-size: 3rem;
+    }
+
+    .newsletterSection .newsletterButton {
+        font-size: 3rem;
+        padding: 1.7rem 6rem;
+    }
+
+    .newsletterSection input[type=text] {
+        width: 25%;
+    }
+
+    .newsletterSection input[type=email] {
+        width: 35%;
     }
 
     .allcatogories {
         padding: 2rem 2rem 3.5rem 0;
         position: relative;
-    }
-
-    .newsletterSection .newsletterButton {
-        font-size: 2.2rem;
-        padding: 1.5rem 5rem;
     }
 
     .footermiddle {
@@ -2564,7 +2601,7 @@ input[type=submit] {
     .quicklinks h3,
     .paymentmethods p {
         font-size: 4rem;
-        padding: 4rem 0;
+        padding: 4rem 0 2rem 0;
     }
 
     .footerbottom {
@@ -2634,11 +2671,18 @@ input[type=submit] {
 
     .header-search input[type=text] {
         padding: 3.2rem 50rem 3.2rem 3.2rem;
-        font-size: 3.4rem;
+        font-size: 4.8rem;
     }
 
     .servicesbanner h4 a {
         font-size: 6rem;
+    }
+
+    .header-search .fa-search {
+        padding: 2.3rem;
+        font-size: 5.4rem;
+        margin: 1rem;
+        border-radius: 3px;
     }
 
     .firstservices,
@@ -2709,6 +2753,16 @@ input[type=submit] {
     .banner-subheading2,
     .banner-subheading3 {
         font-size: 4.4rem;
+        color: #fff;
+    }
+
+    .slide-content:nth-child(2) .Slidertext {
+        position: relative;
+        top: 100%;
+        background: linear-gradient(#d7d1d1, #0e66a1);
+        text-align: center;
+        padding: 0 0 4rem 0;
+        transform: translate(0, 0);
     }
 
     .Slidertext a {
@@ -2996,19 +3050,28 @@ input[type=submit] {
     .Slidertext {
         position: relative;
         top: 100%;
-        background: #0973BA;
+        background: linear-gradient(#1252af, #000000);
         text-align: center;
-        padding: 4rem;
+        padding: 0 0 4rem 0;
         transform: translate(0, 0);
     }
+
+    /* .Slidertext:last-child {
+        position: relative;
+        top: 100%;
+        background: linear-gradient(#d3d5d6, rgb(14 102 161));
+        text-align: center;
+        padding: 0 0 4rem 0;
+        transform: translate(0, 0);
+    } */
 
     .top-heading-slider2 {
         color: #fff;
     }
 
-    .banner-subheading p {
+    /* .banner-subheading p {
         color: #000;
-    }
+    } */
 
     .footerbottom {
         padding: 5rem 0;
@@ -3019,8 +3082,16 @@ input[type=submit] {
         font-weight: 500;
     }
 
+    /* 
     .cardhover {
         transform: translate(65%, -50%);
+    } */
+    .cardbutton {
+        font-size: 4rem;
+    }
+
+    .socialmedia ul li img:hover {
+        border-radius: 5rem;
     }
 
     .newsletterSection {
@@ -3105,10 +3176,10 @@ input[type=submit] {
         padding: 10px;
     }
 
-    .bannerTextAtEnd p,
+    /* .bannerTextAtEnd p,
     .bannerTextAtStart p {
         font-size: 3.7rem;
-    }
+    } */
 
     .bannerTextAtEnd {
         right: 4.5rem;
@@ -3118,7 +3189,12 @@ input[type=submit] {
     html {
         font-size: 18%;
     }
+
+    .site-nav-menu {
+        top: 60px;
+    }
 }
+
 
 @media screen and (max-width: 320px) {
 
@@ -3129,6 +3205,37 @@ input[type=submit] {
     .welcomesection {
         display: inline-block;
         padding: 0;
+    }
+
+    .footer-contact_detail_section p span {
+        font-size: 4.25rem;
+    }
+
+    .newsletterSection input[type=text],
+    .newsletterSection input[type=email],
+    input[type=submit] {
+        font-size: 4.25rem;
+    }
+
+    .newsletterSection .newsletterButton {
+        font-size: 4.5rem;
+    }
+
+    .header-call p span a {
+        font-size: 7rem;
+        padding: 0 2rem;
+    }
+
+    .header-search input[type=text] {
+        padding: 3.2rem 50rem 3.2rem 3.2rem;
+        font-size: 4.5rem;
+    }
+
+    .header-search .fa-search {
+        padding: 2.1rem;
+        font-size: 5.5rem;
+        margin: 1rem;
+        border-radius: 3px;
     }
 
 }
