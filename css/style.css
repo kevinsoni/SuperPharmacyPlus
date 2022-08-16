@@ -1625,12 +1625,21 @@ input[type=submit] {
         bottom: 2.6rem;
     }
 
+    .bannerTextAtEnd p,
+    .bannerTextAtStart p {
+        font-size: 1.5rem;
+    }
+
+    .uspText {
+        font-size: 1.8rem;
+    }
+
 }
 
 @media screen and (max-width: 1200px) {
-    html {
+    /* html {
         font-size: 45%;
-    }
+    } */
 
     .cardimage1:hover .cardhover img,
     .cardimage2:hover .cardhover img,
@@ -1646,6 +1655,11 @@ input[type=submit] {
     .dropbtn {
         font-size: 1.8rem;
     }
+
+    .cart_number {
+        right: 9rem;
+        bottom: 2.6rem;
+    }
 }
 
 @media screen and (max-width: 1080px) {
@@ -1653,9 +1667,9 @@ input[type=submit] {
         max-width: 25%;
     }
 
-    html {
+    /* html {
         font-size: 42%;
-    }
+    } */
 }
 
 @media screen and (max-width: 1024px) {
@@ -1680,14 +1694,13 @@ input[type=submit] {
         font-size: 1.95rem;
     }
 
-    .bannerTextAtEnd h4,
-    .banner-subheading p {
+    .bannerTextAtEnd h4 {
         font-size: 2rem;
     }
 
-    .top-heading-slider {
+    /* .top-heading-slider {
         font-size: 5rem;
-    }
+    } */
 
     .Slidertext a {
         font-size: 1.7rem;
@@ -1700,7 +1713,6 @@ input[type=submit] {
 
     .bannerTextAtEnd p,
     .dropbtnShopAll,
-    .dropdown-content ul li a,
     .categories a,
     .footerbottom {
         font-size: 1.5rem;
@@ -1802,6 +1814,12 @@ input[type=submit] {
 
     html {
         font-size: 40%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header-search input[type=text] {
+        padding: 1.2rem 10rem 1.2rem 1rem;
     }
 }
 
