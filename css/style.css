@@ -32,7 +32,7 @@ img {
 
 .headertop {
     background-color: #FBF252;
-    padding: 2rem 0;
+    padding: 1rem 0;
     transition: all 0.5s;
 }
 
@@ -1968,6 +1968,9 @@ input[type=submit] {
     .card .card-heading h5 {
         font-size: 1.7rem;
     } */
+    .sticky .headerContainer .logo img {
+        max-width: 80%;
+    }
 
     .sticky {
         position: fixed;
@@ -2226,7 +2229,7 @@ input[type=submit] {
         background: #EBE584;
         width: 100%;
         left: 0;
-        top: 79px;
+        top: 70px;
         padding: 0px 0px 700px 0px;
         border-top: 1px solid #4a4848;
         clip-path: circle(0% at 100% 0%);
@@ -3712,7 +3715,7 @@ input[type=submit] {
     }
 
     .site-nav-menu {
-        top: 56px;
+        top: 50px;
     }
 
     .header-call p span a {
@@ -4186,7 +4189,7 @@ input[type=submit] {
     }
 
     .site-nav-menu {
-        top: 50px;
+        top: 45px;
     }
 
     .sticky .site-nav-menu {
