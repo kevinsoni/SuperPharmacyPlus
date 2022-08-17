@@ -232,6 +232,11 @@
         left: 100%;
     }
 
+    #menu ul li a,
+    #menu ul li:hover a {
+        font-size: 4.5rem;
+    }
+
     #menu li:hover>a.prett,
     #menu a.prett:hover {
         background: #eee;

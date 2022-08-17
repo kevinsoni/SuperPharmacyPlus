@@ -3620,6 +3620,10 @@ input[type=submit] {
         font-size: 3rem;
     }
 
+    .mobile-menu {
+        clip-path: circle(150% at 50% -35%);
+    }
+
     .product_section ul button {
         font-size: 6.5rem;
         border-bottom: 1px solid #000;
