@@ -3,10 +3,10 @@ $().ready(function () {
         arrows: false,
         dots: false,
         infinite: true,
-        fade: true,
+        fade: false,
         responsive: [
             {
-                breakpoint: 769,
+                breakpoint: 821,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -23,6 +23,7 @@ $().ready(function () {
     });
 });
 
+
 $(document).ready(function () {
     $(".mobile-nav i").click(function () {
         $(".site-nav-menu").toggleClass("mobile-menu");
@@ -34,8 +35,6 @@ $('.usp').slick({
     dots: false,
     infinite: true,
     speed: 300,
-    // centerPadding: "0",
-    // centerMode: true,
     arrows: false,
     focusOnSelect: true,
     slidesToShow: 4,
@@ -43,20 +42,8 @@ $('.usp').slick({
     // autoplay: true,
     // autoplaySpeed: 3000,
     responsive: [
-        // {
-        //     breakpoint: 2000,
-        //     settings: "unslick"
-        // },
-        // {
-        //     breakpoint: 1440,
-        //     settings: "unslick"
-        // },
-        // {
-        //     breakpoint: 1024,
-        //     settings: "unslick"
-        // },
         {
-            breakpoint: 769,
+            breakpoint: 821,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1
@@ -68,17 +55,9 @@ $('.usp').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
-        },
-        // {
-        //     breakpoint: 375,
-        //     settings: {
-        //         slidesToShow: 1,
-        //         slidesToScroll: 1
-        //     }
-        // }
+        }
     ]
 });
-
 
 
 $('.productcard').slick({
@@ -92,20 +71,8 @@ $('.productcard').slick({
     // autoplay: true,
     // autoplaySpeed: 3000,
     responsive: [
-        // {
-        //     breakpoint: 2000,
-        //     settings: "unslick"
-        // },
-        // {
-        //     breakpoint: 1440,
-        //     settings: "unslick"
-        // },
-        // {
-        //     breakpoint: 1024,
-        //     settings: "unslick"
-        // },
         {
-            breakpoint: 769,
+            breakpoint: 821,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2,
@@ -139,30 +106,8 @@ $('.brands').slick({
     // autoplay: true,
     // autoplaySpeed: 3000,
     responsive: [
-        // {
-        //     breakpoint: 2000,
-        //     settings: "unslick"
-        // },
-        // {
-        //     breakpoint: 1440,
-        //     settings: "unslick"
-        // },
-        // {
-        //     breakpoint: 1024,
-        //     settings: "unslick"
-        // },
-        // {
-        //     breakpoint: 1280,
-        //     settings: {
-        //         slidesToShow: 4,
-        //         slidesToScroll: 4,
-        //         infinite: true,
-        //         dots: false,
-        //         arrows: false,
-        //     }
-        // },
         {
-            breakpoint: 769,
+            breakpoint: 821,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2,
@@ -199,16 +144,16 @@ $('.brands').slick({
 function openPage(pageName, elmnt, color) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
+
     for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+        tabcontent[i].style.height = "0";
+        tabcontent[i].style.overflow = "hidden";
     }
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
-        // tablinks[i].style.backgroundColor = "";
         tablinks[i].style.color = "";
     }
-    document.getElementById(pageName).style.display = "block";
-    // elmnt.style.backgroundColor = bgcolor;
+    document.getElementById(pageName).style.height = "auto";
     elmnt.style.color = color;
 }
 
@@ -239,9 +184,7 @@ $(document).mouseup(function (event) {
 
     var target = event.target;
     var select = $(".select");
-
     if (!select.is(target) && select.has(target).length === 0) {
         select.removeClass("open");
     }
-
 });

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
     <script src="https://kit.fontawesome.com/0d1063cf1c.js" crossorigin="anonymous"></script>
     <link rel='stylesheet' href='./css/slick.css'>
     <link rel="stylesheet" href="./css/navigation.css">
@@ -32,7 +32,7 @@
                         <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
                     </div>
                     <div class="site-nav-menu">
-                        <div class="primary-menu">
+                        <div class="primary-menu container">
                             <div class="header-search">
                                 <form action="/action_page.php" target="_blank" method="get">
                                     <input type="text" placeholder="Search entire store here" name="search">
@@ -64,9 +64,14 @@
                         </div>
                         <div class="container">
                             <div id='menu'>
-                                <input type='checkbox' />
-                                <label>&#8801;<span>Categories</span></label>
                                 <ul>
+                                    <li><a class='prett' href='#' title="My Account">My Account</a>
+                                        <ul class='menus'>
+                                            <li><a href='#' title="Drop Menu1">Favourites</a></li>
+                                            <li><a href='#' title="Drop Menu2">Wishlist</a></li>
+                                            <li><a href='/' title="Drop Menu3">Log-Out</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a class='prett' href='#' title="Shop All">Shop All</a>
                                         <ul class='menus'>
                                             <li><a href='#' title="Drop Menu1">Pharmacy</a></li>
@@ -299,13 +304,13 @@
         <div class="product_section">
             <div class="container">
                 <ul>
-                    <button class="tablink" onclick="openPage('featured', this, '#0973BA')"
+                    <button class="tablink refresh-button" onclick="openPage('featured', this, '#0973BA') "
                         id="defaultOpen">Featured</button>
                     <li><a><span style="color:rgb(201, 201, 201);">/</span></a></li>
-                    <button class="tablink" onclick="openPage('new_arrivals', this, '#0973BA')">New
+                    <button class="tablink refresh-button" onclick="openPage('new_arrivals', this, '#0973BA')">New
                         Arrivals</button>
                     <li><a><span style="color:rgb(201, 201, 201);">/</span></a></li>
-                    <button class="tablink" onclick="openPage('clearance', this, '#0973BA')">Clearance
+                    <button class="tablink refresh-button" onclick="openPage('clearance', this, '#0973BA')">Clearance
                         Items</button>
                 </ul>
                 <p>Our Top Products</p>
